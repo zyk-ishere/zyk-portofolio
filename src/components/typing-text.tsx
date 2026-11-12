@@ -25,7 +25,7 @@ export function TypingText({ texts, speed = 80, pause = 1400 }: { texts: string[
   return (
     <span className="mono">
       {shown}
-      <span className="inline-block w-[2px] h-[1.1em] bg-foreground ml-1 align-middle animate-pulse" />
+      <span className="inline-block w-[2px] h-[1.1em] bg-foreground ml-1 align-middle cursor-blink" />
     </span>
   );
 }
