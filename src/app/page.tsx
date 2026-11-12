@@ -1,8 +1,8 @@
 export default function Home() {
   const projects = [
-    { title: "ZYK — Personal Link Hub", desc: "Personal link-in-bio page with dark glassmorphism. Unifies Instagram, WhatsApp, and Discord in one link, responsive, deployed on Netlify.", tags: ["HTML", "CSS", "Bootstrap"], link: "https://zyks.netlify.app/" },
     { title: "Kostin — Boarding House Management", desc: "Boarding house payment and billing system: room & tenant data, monthly invoices, proof-of-transfer verification. PWA.", tags: ["Next.js", "PWA", "Supabase"], link: "https://www.konstin.my.id/" },
     { title: "Duidi", desc: "Personal finance and financial planning app. Track income/expenses, manage budgets.", tags: ["Next.js", "PWA", "Finance"], link: "https://www.duidi.web.id/" },
+    { title: "ZYK — Personal Link Hub", desc: "Personal link-in-bio page with dark glassmorphism. Unifies Instagram, WhatsApp, and Discord in one link, responsive, deployed on Netlify.", tags: ["HTML", "CSS", "Bootstrap"], link: "https://zyks.netlify.app/" },
   ];
   const skills = ["Full Stack Development", "React / Next.js", "Node.js", "TypeScript", "Ethical Hacking", "Web App Security", "Networking", "Linux", "Supabase", "Tailwind CSS"];
 
