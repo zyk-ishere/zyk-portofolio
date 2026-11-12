@@ -287,7 +287,7 @@ export default function Home() {
               href="https://devzy.site"
               target="_blank"
               rel="noopener"
-              className="btn btn-ghost shrink-0"
+              className="btn btn-devzy shrink-0"
             >
               Visit devzy.site
             </a>
