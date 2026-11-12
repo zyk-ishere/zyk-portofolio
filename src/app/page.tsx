@@ -14,7 +14,7 @@ export default function Home() {
         <div className="container flex items-center justify-between h-16">
           <a href="#home" className="mono font-semibold">taufik<span className="text-muted">.</span>zaqi</a>
           <div className="hidden md:flex gap-6 text-sm text-muted">
-            {["about","skills","projects","certificates","contact"].map(s => (
+            {["about","skills","projects","certificates","cv","contact"].map(s => (
               <a key={s} href={`#${s}`} className="hover:text-foreground transition">{s}</a>
             ))}
           </div>
@@ -123,10 +123,22 @@ export default function Home() {
         </div>
       </section>
 
+      {/* CV */}
+      <section id="cv" className="section border-t border-line">
+        <div className="container">
+          <p className="mono text-sm text-muted mb-2">05 — Curriculum Vitae</p>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">CV Taufik Zaqi</h2>
+          <p className="text-muted mb-6">Ringkasan CV dalam bentuk dokumen PDF. Bisa dilihat atau diunduh langsung.</p>
+          <a href="/cv/cv-taufik-zaqi.pdf" target="_blank" rel="noopener" className="btn btn-primary">
+            Lihat / Unduh CV (PDF)
+          </a>
+        </div>
+      </section>
+
       {/* CONTACT */}
       <section id="contact" className="section border-t border-line">
         <div className="container">
-          <p className="mono text-sm text-muted mb-2">05 — Kontak</p>
+          <p className="mono text-sm text-muted mb-2">06 - Kontak</p>
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Hubungi Saya</h2>
           <div className="grid md:grid-cols-2 gap-6">
             <a href="mailto:qwertyuzyk420@gmail.com" className="card p-6 hover:bg-card/80 transition">Email</a>
