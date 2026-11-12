@@ -44,21 +44,13 @@ export default function Home() {
             Building end-to-end web applications and performing ethical security testing.
             Documenting projects, skills, and the learning journey in IT.
           </p>
-          <div className="mt-8 flex gap-3 hero-cta">
+          <div className="mt-8 flex flex-wrap gap-3 hero-cta">
             <a href="#projects" className="btn btn-primary">View Projects</a>
             <a href="#contact" className="btn btn-ghost">Contact Me</a>
-          </div>
-          <p className="mt-6 text-sm text-muted">
-            Want a website like this?{" "}
-            <a
-              href="https://devzy.site"
-              target="_blank"
-              rel="noopener"
-              className="text-foreground underline underline-offset-4 hover:opacity-70 transition"
-            >
-              devzy.site →
+            <a href="https://devzy.site" target="_blank" rel="noopener" className="btn btn-ghost">
+              Want a website like this?
             </a>
-          </p>
+          </div>
         </div>
       </section>
 
