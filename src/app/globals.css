@@ -45,6 +45,16 @@ body {
 .btn-primary:hover { background: #d4d4d4; }
 .btn-ghost { background: transparent; color: var(--foreground); }
 .btn-ghost:hover { background: #1a1a1a; }
+.btn-devzy {
+  background: rgba(239, 68, 68, 0.12);
+  border-color: rgba(239, 68, 68, 0.35);
+  color: #fca5a5;
+}
+.btn-devzy:hover {
+  background: rgba(239, 68, 68, 0.2);
+  border-color: rgba(239, 68, 68, 0.55);
+  color: #fecaca;
+}
 
 .mono { font-family: var(--font-geist-mono), monospace; }
 

@@ -47,7 +47,7 @@ export default function Home() {
           <div className="mt-8 flex flex-wrap gap-3 hero-cta">
             <a href="#projects" className="btn btn-primary">View Projects</a>
             <a href="#contact" className="btn btn-ghost">Contact Me</a>
-            <a href="https://devzy.site" target="_blank" rel="noopener" className="btn btn-ghost">
+            <a href="https://devzy.site" target="_blank" rel="noopener" className="btn btn-devzy">
               Want a website like this?
             </a>
           </div>
