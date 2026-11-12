@@ -19,7 +19,7 @@ export default function Home() {
         <div className="container flex items-center justify-between h-16">
           <a href="#home" className="mono font-semibold">taufik<span className="text-muted">.</span>zaqi</a>
           <div className="hidden md:flex gap-6 text-sm text-muted">
-            {["about","skills","projects","security","certificates","cv","contact"].map(s => (
+            {["about","skills","projects","security","certificates","cv","services","contact"].map(s => (
               <a key={s} href={`#${s}`} className="hover:text-foreground transition capitalize nav-link">{s === "cv" ? "CV" : s}</a>
             ))}
           </div>
@@ -194,10 +194,26 @@ export default function Home() {
         </div>
       </section>
 
+      {/* SERVICES */}
+      <section id="services" className="section border-t border-line reveal">
+        <div className="container">
+          <p className="mono text-sm text-muted mb-2">07 — Services</p>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">Web Development Services</h2>
+          <p className="text-muted mb-6 max-w-2xl">
+            I also offer website development services — from landing pages and portfolios to
+            functional web applications. Responsive, fast, and tailored to your needs.
+            Contact me via WhatsApp for more info and a free consultation.
+          </p>
+          <a href="https://wa.me/6281267284236?text=Halo%20Taufik,%20saya%20tertarik%20dengan%20jasa%20pembuatan%20website." target="_blank" rel="noopener" className="btn btn-primary">
+            Contact via WhatsApp
+          </a>
+        </div>
+      </section>
+
       {/* CONTACT */}
       <section id="contact" className="section border-t border-line reveal">
         <div className="container">
-          <p className="mono text-sm text-muted mb-2">07 — Contact</p>
+          <p className="mono text-sm text-muted mb-2">08 — Contact</p>
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Contact Me</h2>
           <div className="grid md:grid-cols-2 gap-6">
             <a href="mailto:qwertyuzyk420@gmail.com" className="card p-6 hover:bg-card/80 transition flex items-center gap-4">
