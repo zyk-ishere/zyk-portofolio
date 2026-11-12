@@ -2,7 +2,7 @@ export default function Home() {
   const projects = [
     { title: "ZYK — Personal Link Hub", desc: "Halaman penghubung pribadi bergaya dark glassmorphism. Menyatukan Instagram, WhatsApp, dan Discord dalam satu tautan.", tags: ["HTML", "CSS", "Bootstrap"], link: "https://zyks.netlify.app/" },
     { title: "Kostin — Manajemen Kost", desc: "Sistem pembayaran dan penagihan kost: data kamar, penghuni, tagihan bulanan, verifikasi bukti transfer. PWA.", tags: ["Next.js", "PWA", "Supabase"], link: "https://www.konstin.my.id/" },
-    { title: "Keuangan Mahir", desc: "Aplikasi keuangan pribadi dan perencanaan finansial. Catat pemasukan/pengeluaran, kelola anggaran.", tags: ["Next.js", "PWA", "Finansial"], link: "https://www.duidi.web.id/" },
+    { title: "Duidi", desc: "Aplikasi keuangan pribadi dan perencanaan finansial. Catat pemasukan/pengeluaran, kelola anggaran.", tags: ["Next.js", "PWA", "Finansial"], link: "https://www.duidi.web.id/" },
     { title: "Kopi Ajoe — Security Assessment", desc: "Pengujian keamanan dengan izin pemilik. Temuan dilaporkan dan ditindaklanjuti.", tags: ["Bug Hunting", "Web Security", "Authorized"], link: "#" },
   ];
   const skills = ["Full Stack Development", "React / Next.js", "Node.js", "TypeScript", "Ethical Hacking", "Web App Security", "Networking", "Linux", "Supabase", "Tailwind CSS"];
