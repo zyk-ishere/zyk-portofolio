@@ -14,7 +14,7 @@ export default function Home() {
         <div className="container flex items-center justify-between h-16">
           <a href="#home" className="mono font-semibold">taufik<span className="text-muted">.</span>zaqi</a>
           <div className="hidden md:flex gap-6 text-sm text-muted">
-            {["about","skills","projects","gallery","contact"].map(s => (
+            {["about","skills","projects","certificates","contact"].map(s => (
               <a key={s} href={`#${s}`} className="hover:text-foreground transition">{s}</a>
             ))}
           </div>
@@ -107,30 +107,10 @@ export default function Home() {
         </div>
       </section>
 
-      {/* GALLERY */}
-      <section id="gallery" className="section border-t border-line">
-        <div className="container">
-          <p className="mono text-sm text-muted mb-2">04 — Galeri</p>
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">Galeri</h2>
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-            {[
-              { src: "/gallery/kopi-ajoe-1.jpg", alt: "Bukti deface Kopi Ajoe 1" },
-              { src: "/gallery/kopi-ajoe-2.jpg", alt: "Bukti deface Kopi Ajoe 2" },
-              { src: "/gallery/cert-english.jpg", alt: "Sertifikat English Learner" },
-            ].map((img) => (
-              <a key={img.src} href={img.src} target="_blank" rel="noopener" className="card overflow-hidden block">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src={img.src} alt={img.alt} className="w-full h-48 object-cover" />
-              </a>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* CERTIFICATES */}
       <section id="certificates" className="section border-t border-line">
         <div className="container">
-          <p className="mono text-sm text-muted mb-2">05 — Sertifikat</p>
+          <p className="mono text-sm text-muted mb-2">04 — Sertifikat</p>
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Sertifikat</h2>
           <div className="grid md:grid-cols-2 gap-4">
             <a href="/certificates/sertifikat-taufik-zaqi.pdf" target="_blank" rel="noopener" className="card p-6 hover:bg-card/80 transition">
