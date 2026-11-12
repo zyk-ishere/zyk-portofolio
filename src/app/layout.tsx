@@ -12,9 +12,62 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const siteUrl = "https://zyk.web.id";
+const siteTitle = "Taufik Zaqi — Full Stack Web Developer & Grey Hat";
+const siteDescription =
+  "Portfolio of Taufik Zaqi — Full Stack Web Developer and Grey Hat based in Payakumbuh, West Sumatra. Web development projects, security research, certificates, and CV.";
+
 export const metadata: Metadata = {
-  title: "Taufik Zaqi — Full Stack Web Developer & Ethical Hacker",
-  description: "Portofolio digital Taufik Zaqi — Full Stack Web Developer & Ethical Hacker.",
+  metadataBase: new URL(siteUrl),
+  title: {
+    default: siteTitle,
+    template: "%s — Taufik Zaqi",
+  },
+  description: siteDescription,
+  applicationName: "Taufik Zaqi Portfolio",
+  authors: [{ name: "Taufik Zaqi", url: siteUrl }],
+  creator: "Taufik Zaqi",
+  keywords: [
+    "Taufik Zaqi",
+    "zyk",
+    "full stack web developer",
+    "grey hat",
+    "ethical hacking",
+    "web security",
+    "pentest",
+    "Next.js developer",
+    "portfolio",
+    "Payakumbuh",
+    "West Sumatra",
+  ],
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    type: "website",
+    url: siteUrl,
+    siteName: "Taufik Zaqi",
+    title: siteTitle,
+    description: siteDescription,
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: siteTitle,
+    description: siteDescription,
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
+  },
+  category: "technology",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
