@@ -149,7 +149,7 @@ export default function Home() {
           <p className="mono text-sm text-muted mb-2">05 — Kontak</p>
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Hubungi Saya</h2>
           <div className="grid md:grid-cols-2 gap-6">
-            <a href="mailto:zaqi@example.com" className="card p-6 hover:bg-card/80 transition">Email</a>
+            <a href="mailto:qwertyuzyk420@gmail.com" className="card p-6 hover:bg-card/80 transition">Email</a>
             <a href="https://wa.me/6289675101657" target="_blank" rel="noopener" className="card p-6 hover:bg-card/80 transition">WhatsApp</a>
             <a href="https://instagram.com/" target="_blank" rel="noopener" className="card p-6 hover:bg-card/80 transition">Instagram</a>
             <a href="https://github.com/" target="_blank" rel="noopener" className="card p-6 hover:bg-card/80 transition">GitHub</a>
