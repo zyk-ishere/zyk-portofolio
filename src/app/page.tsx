@@ -3,7 +3,6 @@ export default function Home() {
     { title: "ZYK — Personal Link Hub", desc: "Halaman penghubung pribadi bergaya dark glassmorphism. Menyatukan Instagram, WhatsApp, dan Discord dalam satu tautan.", tags: ["HTML", "CSS", "Bootstrap"], link: "https://zyks.netlify.app/" },
     { title: "Kostin — Manajemen Kost", desc: "Sistem pembayaran dan penagihan kost: data kamar, penghuni, tagihan bulanan, verifikasi bukti transfer. PWA.", tags: ["Next.js", "PWA", "Supabase"], link: "https://www.konstin.my.id/" },
     { title: "Duidi", desc: "Aplikasi keuangan pribadi dan perencanaan finansial. Catat pemasukan/pengeluaran, kelola anggaran.", tags: ["Next.js", "PWA", "Finansial"], link: "https://www.duidi.web.id/" },
-    { title: "Kopi Ajoe — Security Assessment", desc: "Pengujian keamanan dengan izin pemilik. Temuan dilaporkan dan ditindaklanjuti.", tags: ["Bug Hunting", "Web Security", "Authorized"], link: "#" },
   ];
   const skills = ["Full Stack Development", "React / Next.js", "Node.js", "TypeScript", "Ethical Hacking", "Web App Security", "Networking", "Linux", "Supabase", "Tailwind CSS"];
 
@@ -14,7 +13,7 @@ export default function Home() {
         <div className="container flex items-center justify-between h-16">
           <a href="#home" className="mono font-semibold">taufik<span className="text-muted">.</span>zaqi</a>
           <div className="hidden md:flex gap-6 text-sm text-muted">
-            {["about","skills","projects","certificates","cv","contact"].map(s => (
+            {["about","skills","projects","security","certificates","cv","contact"].map(s => (
               <a key={s} href={`#${s}`} className="hover:text-foreground transition">{s}</a>
             ))}
           </div>
@@ -107,10 +106,40 @@ export default function Home() {
         </div>
       </section>
 
+      {/* SECURITY RESEARCHER */}
+      <section id="security" className="section border-t border-line">
+        <div className="container">
+          <p className="mono text-sm text-muted mb-2">04 — Security Researcher</p>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">Security Research</h2>
+          <article className="card p-6">
+            <div className="flex items-center gap-3 mb-3">
+              <span className="mono text-xs px-2 py-1 rounded border border-line">Bug Hunting</span>
+              <span className="mono text-xs px-2 py-1 rounded border border-line">Web Security</span>
+              <span className="mono text-xs px-2 py-1 rounded border border-line">Authorized</span>
+            </div>
+            <h3 className="text-xl font-semibold">Kopi Ajoe — Authorized Security Assessment</h3>
+            <p className="text-muted mt-2">
+              Pengujian keamanan dengan izin pemilik aplikasi. Ditemukan kelemahan yang
+              memungkinkan penggantian konten produk; temuan dilaporkan dan ditindaklanjuti.
+            </p>
+            <div className="grid grid-cols-2 gap-4 mt-4">
+              <a href="/gallery/kopi-ajoe-1.jpg" target="_blank" rel="noopener" className="card overflow-hidden block">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src="/gallery/kopi-ajoe-1.jpg" alt="Bukti deface Kopi Ajoe 1" className="w-full h-40 object-cover" />
+              </a>
+              <a href="/gallery/kopi-ajoe-2.jpg" target="_blank" rel="noopener" className="card overflow-hidden block">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src="/gallery/kopi-ajoe-2.jpg" alt="Bukti deface Kopi Ajoe 2" className="w-full h-40 object-cover" />
+              </a>
+            </div>
+          </article>
+        </div>
+      </section>
+
       {/* CERTIFICATES */}
       <section id="certificates" className="section border-t border-line">
         <div className="container">
-          <p className="mono text-sm text-muted mb-2">04 — Sertifikat</p>
+          <p className="mono text-sm text-muted mb-2">05 — Sertifikat</p>
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Sertifikat</h2>
           <div className="grid md:grid-cols-2 gap-4">
             <a href="/certificates/sertifikat-cadiak-ctf.pdf" target="_blank" rel="noopener" className="card p-6 hover:bg-card/80 transition">
@@ -132,7 +161,7 @@ export default function Home() {
       {/* CV */}
       <section id="cv" className="section border-t border-line">
         <div className="container">
-          <p className="mono text-sm text-muted mb-2">05 — Curriculum Vitae</p>
+          <p className="mono text-sm text-muted mb-2">06 — Curriculum Vitae</p>
           <h2 className="text-3xl md:text-4xl font-bold mb-6">CV Taufik Zaqi</h2>
           <p className="text-muted mb-6">Ringkasan CV dalam bentuk dokumen PDF. Bisa dilihat atau diunduh langsung.</p>
           <a href="/cv/cv-taufik-zaqi.pdf" target="_blank" rel="noopener" className="btn btn-primary">
@@ -144,7 +173,7 @@ export default function Home() {
       {/* CONTACT */}
       <section id="contact" className="section border-t border-line">
         <div className="container">
-          <p className="mono text-sm text-muted mb-2">06 - Kontak</p>
+          <p className="mono text-sm text-muted mb-2">07 - Kontak</p>
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Hubungi Saya</h2>
           <div className="grid md:grid-cols-2 gap-6">
             <a href="mailto:qwertyuzyk420@gmail.com" className="card p-6 hover:bg-card/80 transition">Email</a>
