@@ -179,10 +179,22 @@ export default function Home() {
           <p className="mono text-sm text-muted mb-2">07 — Contact</p>
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Contact Me</h2>
           <div className="grid md:grid-cols-2 gap-6">
-            <a href="mailto:qwertyuzyk420@gmail.com" className="card p-6 hover:bg-card/80 transition">Email</a>
-            <a href="https://wa.me/6281267284236" target="_blank" rel="noopener" className="card p-6 hover:bg-card/80 transition">WhatsApp</a>
-            <a href="https://instagram.com/zyk.1sheremf" target="_blank" rel="noopener" className="card p-6 hover:bg-card/80 transition">Instagram</a>
-            <a href="https://github.com/zyk-ishere" target="_blank" rel="noopener" className="card p-6 hover:bg-card/80 transition">GitHub</a>
+            <a href="mailto:qwertyuzyk420@gmail.com" className="card p-6 hover:bg-card/80 transition">
+              <div className="font-semibold">Email</div>
+              <div className="mono text-sm text-muted mt-1">qwertyuzyk420@gmail.com</div>
+            </a>
+            <a href="https://wa.me/6281267284236" target="_blank" rel="noopener" className="card p-6 hover:bg-card/80 transition">
+              <div className="font-semibold">WhatsApp</div>
+              <div className="mono text-sm text-muted mt-1">+62 812-6728-4236</div>
+            </a>
+            <a href="https://instagram.com/zyk.1sheremf" target="_blank" rel="noopener" className="card p-6 hover:bg-card/80 transition">
+              <div className="font-semibold">Instagram</div>
+              <div className="mono text-sm text-muted mt-1">@zyk.1sheremf</div>
+            </a>
+            <a href="https://github.com/zyk-ishere" target="_blank" rel="noopener" className="card p-6 hover:bg-card/80 transition">
+              <div className="font-semibold">GitHub</div>
+              <div className="mono text-sm text-muted mt-1">zyk-ishere</div>
+            </a>
           </div>
         </div>
       </section>
