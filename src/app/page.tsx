@@ -113,6 +113,12 @@ export default function Home() {
           <p className="mono text-sm text-muted mb-2">04 — Sertifikat</p>
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Sertifikat</h2>
           <div className="grid md:grid-cols-2 gap-4">
+            <a href="/certificates/sertifikat-cadiak-ctf.pdf" target="_blank" rel="noopener" className="card p-6 hover:bg-card/80 transition">
+              Sertifikat CTF CADIAK 2026 (PDF)
+            </a>
+            <a href="/certificates/sertifikat-english-learner-2.pdf" target="_blank" rel="noopener" className="card p-6 hover:bg-card/80 transition">
+              Sertifikat English Learner (PDF)
+            </a>
             <a href="/certificates/sertifikat-network-fundamental.pdf" target="_blank" rel="noopener" className="card p-6 hover:bg-card/80 transition">
               Sertifikat Network Fundamental (PDF)
             </a>
