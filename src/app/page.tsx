@@ -204,6 +204,10 @@ export default function Home() {
               <div className="font-semibold">GitHub</div>
               <div className="mono text-sm text-muted mt-1">zyk-ishere</div>
             </a>
+            <a href="https://discord.com" target="_blank" rel="noopener" className="card p-6 hover:bg-card/80 transition">
+              <div className="font-semibold">Discord</div>
+              <div className="mono text-sm text-muted mt-1">zyk0363</div>
+            </a>
           </div>
         </div>
       </section>
