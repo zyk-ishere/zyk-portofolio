@@ -1,4 +1,5 @@
 import { RevealObserver } from "@/components/reveal-observer";
+import { TypingText } from "@/components/typing-text";
 
 export default function Home() {
   const projects = [
@@ -33,8 +34,8 @@ export default function Home() {
           <p className="text-xl md:text-2xl text-muted mt-4 hero-sub">
             Who Am I
           </p>
-          <p className="text-lg md:text-xl mt-2 hero-sub">
-            Full Stack Web Developer · Ethical Hacker
+          <p className="text-lg md:text-xl mt-2 hero-sub mono">
+            <TypingText texts={["Full Stack Web Developer", "Ethical Hacker", "Network Enthusiast", "Bug Hunter"]} />
           </p>
           <p className="mt-6 max-w-2xl text-muted hero-desc">
             Building end-to-end web applications and performing ethical security testing.
@@ -46,6 +47,17 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* MARQUEE */}
+      <div className="border-y border-line py-4 overflow-hidden">
+        <div className="marquee">
+          <div className="marquee-track text-sm mono text-muted">
+            {["Full Stack Development","Ethical Hacking","Web App Security","Next.js","React","Node.js","TypeScript","Supabase","Linux","Networking","Bug Hunting","CTF Player"].concat(["Full Stack Development","Ethical Hacking","Web App Security","Next.js","React","Node.js","TypeScript","Supabase","Linux","Networking","Bug Hunting","CTF Player"]).map((t, i) => (
+              <span key={i}>{t} ✦</span>
+            ))}
+          </div>
+        </div>
+      </div>
 
       {/* ABOUT */}
       <section id="about" className="section border-t border-line reveal">

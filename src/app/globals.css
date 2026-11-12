@@ -109,3 +109,12 @@ a { color: inherit; }
 .nav-link:hover::after { width: 100%; }
 
 .float { animation: float 4s ease-in-out infinite; }
+
+/* ---------- Marquee ---------- */
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+.marquee { overflow: hidden; white-space: nowrap; }
+.marquee-track { display: inline-block; animation: marquee 28s linear infinite; }
+.marquee-track span { display: inline-block; padding: 0 2rem; }
