@@ -50,19 +50,25 @@ export default function Home() {
         <div className="container">
           <p className="mono text-sm text-muted mb-2">01 — Tentang</p>
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Tentang Saya</h2>
-          <div className="grid md:grid-cols-2 gap-8">
-            <p className="text-muted leading-relaxed">
-              Saya adalah Full Stack Web Developer dan Ethical Hacker. Membangun aplikasi web
-              end-to-end — dari frontend hingga backend — serta melakukan pengujian keamanan
-              secara etis untuk menemukan dan memperbaiki celah.
-            </p>
-            <div className="card p-6">
-              <ul className="space-y-2 text-sm">
-                <li><span className="text-muted">Peran:</span> Full Stack Web Developer</li>
-                <li><span className="text-muted">Bidang:</span> Ethical Hacker / Security</li>
-                <li><span className="text-muted">Lokasi:</span> Payakumbuh, Sumatera Barat</li>
-                <li><span className="text-muted">Fokus:</span> Web Apps, Security, Networking</li>
-              </ul>
+          <div className="grid md:grid-cols-2 gap-8 items-center">
+            <div className="card overflow-hidden">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/img/taufik.jpg" alt="Foto Taufik Zaqi" className="w-full h-auto object-contain" />
+            </div>
+            <div className="space-y-4">
+              <p className="text-muted leading-relaxed">
+                Saya adalah Full Stack Web Developer dan Ethical Hacker. Membangun aplikasi web
+                end-to-end — dari frontend hingga backend — serta melakukan pengujian keamanan
+                secara etis untuk menemukan dan memperbaiki celah.
+              </p>
+              <div className="card p-6">
+                <ul className="space-y-2 text-sm">
+                  <li><span className="text-muted">Peran:</span> Full Stack Web Developer</li>
+                  <li><span className="text-muted">Bidang:</span> Ethical Hacker / Security</li>
+                  <li><span className="text-muted">Lokasi:</span> Payakumbuh, Sumatera Barat</li>
+                  <li><span className="text-muted">Fokus:</span> Web Apps, Security, Networking</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
