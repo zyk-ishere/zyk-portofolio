@@ -5,7 +5,7 @@ export default function Home() {
     { title: "Keuangan Mahir", desc: "Aplikasi keuangan pribadi dan perencanaan finansial. Catat pemasukan/pengeluaran, kelola anggaran.", tags: ["Next.js", "PWA", "Finansial"], link: "https://www.duidi.web.id/" },
     { title: "Kopi Ajoe — Security Assessment", desc: "Pengujian keamanan dengan izin pemilik. Temuan dilaporkan dan ditindaklanjuti.", tags: ["Bug Hunting", "Web Security", "Authorized"], link: "#" },
   ];
-  const skills = ["Networking", "Linux", "Web Development", "Bug Hunting", "JavaScript", "Next.js", "Supabase", "Tailwind CSS"];
+  const skills = ["Full Stack Development", "React / Next.js", "Node.js", "TypeScript", "Ethical Hacking", "Web App Security", "Networking", "Linux", "Supabase", "Tailwind CSS"];
 
   return (
     <main className="min-h-screen">
@@ -29,11 +29,14 @@ export default function Home() {
             Taufik Zaqi
           </h1>
           <p className="text-xl md:text-2xl text-muted mt-4">
-            Network Enthusiast · Web Developer · Aspiring Bug Hunter
+            Who Am I
+          </p>
+          <p className="text-lg md:text-xl mt-2">
+            Full Stack Web Developer · Ethical Hacker
           </p>
           <p className="mt-6 max-w-2xl text-muted">
-            Siswa SMKN 4 Payakumbuh, jurusan Teknik Komputer dan Jaringan. Mendokumentasikan
-            proyek, keterampilan, dan perjalanan belajar di bidang IT.
+            Membangun aplikasi web end-to-end dan melakukan pengujian keamanan secara etis.
+            Mendokumentasikan proyek, keterampilan, dan perjalanan belajar di bidang IT.
           </p>
           <div className="mt-8 flex gap-3">
             <a href="#projects" className="btn btn-primary">Lihat Proyek</a>
@@ -49,16 +52,16 @@ export default function Home() {
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Tentang Saya</h2>
           <div className="grid md:grid-cols-2 gap-8">
             <p className="text-muted leading-relaxed">
-              Saya adalah siswa SMKN 4 Payakumbuh dengan jurusan Teknik Komputer dan Jaringan.
-              Tertarik pada administrasi jaringan, keamanan siber, dan pengembangan web.
-              Aktif mengikuti kompetisi CTF dan membangun aplikasi web fungsional.
+              Saya adalah Full Stack Web Developer dan Ethical Hacker. Membangun aplikasi web
+              end-to-end — dari frontend hingga backend — serta melakukan pengujian keamanan
+              secara etis untuk menemukan dan memperbaiki celah.
             </p>
             <div className="card p-6">
               <ul className="space-y-2 text-sm">
-                <li><span className="text-muted">Sekolah:</span> SMKN 4 Payakumbuh</li>
-                <li><span className="text-muted">Jurusan:</span> Teknik Komputer & Jaringan</li>
+                <li><span className="text-muted">Peran:</span> Full Stack Web Developer</li>
+                <li><span className="text-muted">Bidang:</span> Ethical Hacker / Security</li>
                 <li><span className="text-muted">Lokasi:</span> Payakumbuh, Sumatera Barat</li>
-                <li><span className="text-muted">Minat:</span> Networking, Web Dev, Security</li>
+                <li><span className="text-muted">Fokus:</span> Web Apps, Security, Networking</li>
               </ul>
             </div>
           </div>

@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Taufik Zaqi — Network Enthusiast, Web Developer & Aspiring Bug Hunter",
-  description: "Portofolio digital Taufik Zaqi — siswa SMKN 4 Payakumbuh, jurusan TKJ.",
+  title: "Taufik Zaqi — Full Stack Web Developer & Ethical Hacker",
+  description: "Portofolio digital Taufik Zaqi — Full Stack Web Developer & Ethical Hacker.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
