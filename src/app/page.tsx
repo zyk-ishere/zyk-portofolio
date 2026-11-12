@@ -52,7 +52,7 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div className="card overflow-hidden">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/img/taufik.jpg" alt="Photo of Taufik Zaqi" className="w-full h-auto object-contain" />
+              <img src="/img/taufik.png" alt="Photo of Taufik Zaqi" className="w-full h-auto object-contain" />
             </div>
             <div className="space-y-4">
               <p className="text-muted leading-relaxed">
