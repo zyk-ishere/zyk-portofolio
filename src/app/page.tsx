@@ -48,6 +48,17 @@ export default function Home() {
             <a href="#projects" className="btn btn-primary">View Projects</a>
             <a href="#contact" className="btn btn-ghost">Contact Me</a>
           </div>
+          <p className="mt-6 text-sm text-muted">
+            Want a website like this?{" "}
+            <a
+              href="https://devzy.site"
+              target="_blank"
+              rel="noopener"
+              className="text-foreground underline underline-offset-4 hover:opacity-70 transition"
+            >
+              devzy.site →
+            </a>
+          </p>
         </div>
       </section>
 
