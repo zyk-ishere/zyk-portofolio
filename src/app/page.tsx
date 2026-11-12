@@ -3,11 +3,11 @@ import { TypingText } from "@/components/typing-text";
 
 export default function Home() {
   const projects = [
+    { title: "Devzy — Web Development Services", desc: "Website service site for Devzy: landing pages, company profiles, e-commerce, and custom web apps. Includes packages, pricing, portfolio, blog, and WhatsApp consultation.", tags: ["Next.js", "Tailwind CSS", "Services"], link: "https://devzy.site" },
     { title: "Kostin — Boarding House Management", desc: "Boarding house payment and billing system: room & tenant data, monthly invoices, proof-of-transfer verification. PWA.", tags: ["Next.js", "PWA", "Supabase"], link: "https://www.konstin.my.id/" },
     { title: "Duidi", desc: "Personal finance and financial planning app. Track income/expenses, manage budgets.", tags: ["Next.js", "PWA", "Finance"], link: "https://www.duidi.web.id/" },
     { title: "Zykk Store", desc: "Social media booster service (SMM provider): increase followers, likes, and reposts instantly. Fast, safe, competitive pricing.", tags: ["HTML", "CSS", "JavaScript"], link: "https://zykk-store.netlify.app/" },
     { title: "ZYK — Personal Link Hub", desc: "Personal link-in-bio page with dark glassmorphism. Unifies Instagram, WhatsApp, and Discord in one link, responsive, deployed on Netlify.", tags: ["HTML", "CSS", "Bootstrap"], link: "https://zyks.netlify.app/" },
-    { title: "Devzy — Web Development Services", desc: "Website service site for Devzy: landing pages, company profiles, e-commerce, and custom web apps. Includes packages, pricing, portfolio, blog, and WhatsApp consultation.", tags: ["Next.js", "Tailwind CSS", "Services"], link: "https://devzy.site" },
   ];
   const skills = ["Full Stack Development", "React / Next.js", "Node.js", "TypeScript", "Ethical Hacking", "Web App Security", "Networking", "Linux (parrot os, debian 12)", "Supabase", "Tailwind CSS"];
 
