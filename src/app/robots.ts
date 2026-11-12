@@ -8,7 +8,7 @@ export default function robots(): MetadataRoute.Robots {
         allow: "/",
       },
     ],
-    sitemap: "https://zyk.web.id/sitemap.xml",
-    host: "https://zyk.web.id",
+    sitemap: "https://www.zyk.web.id/sitemap.xml",
+    host: "https://www.zyk.web.id",
   };
 }

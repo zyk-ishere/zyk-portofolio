@@ -12,7 +12,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const siteUrl = "https://zyk.web.id";
+const siteUrl = "https://www.zyk.web.id";
 const siteTitle = "Taufik Zaqi — Full Stack Web Developer & Grey Hat";
 const siteDescription =
   "Portfolio of Taufik Zaqi — Full Stack Web Developer and Grey Hat based in Payakumbuh, West Sumatra. Web development projects, security research, certificates, and CV.";
