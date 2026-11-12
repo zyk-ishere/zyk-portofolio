@@ -13,6 +13,7 @@ export default function Home() {
   return (
     <main className="min-h-screen">
       <RevealObserver />
+
       {/* NAV */}
       <nav className="fixed top-0 inset-x-0 z-50 border-b border-line bg-background/80 backdrop-blur">
         <div className="container flex items-center justify-between h-16">
@@ -36,7 +37,7 @@ export default function Home() {
             Who Am I
           </p>
           <p className="text-lg md:text-xl mt-2 hero-sub mono">
-            <TypingText texts={["Full Stack Web Developer", "Ethical Hacker", "Network Enthusiast", "Bug Hunter"]} />
+            <TypingText texts={["Full Stack Web Developer", "Grey Hat", "Network Enthusiast", "Bug Hunter"]} />
           </p>
           <p className="mt-6 max-w-2xl text-muted hero-desc">
             Building end-to-end web applications and performing ethical security testing.
@@ -134,7 +135,17 @@ export default function Home() {
               <span className="mono text-xs px-2 py-1 rounded border border-line">Authorized</span>
             </div>
             <h3 className="text-xl font-semibold">Kopi Ajoe — Authorized Security Assessment</h3>
-
+            <p className="text-muted mt-2">
+              Authorized security assessment on the Kopi Ajoe application (with owner permission).
+              Findings include:
+            </p>
+            <ul className="text-muted mt-2 space-y-1 list-disc list-inside text-sm">
+              <li>Accessed the super admin panel of <span className="mono">admin.kopiajoe.com</span>.</li>
+              <li>Identified a Row Level Security (RLS) misconfiguration allowing unauthorized data access.</li>
+              <li>Modified the appearance of the Kopi Ajoe app published on the Play Store.</li>
+              <li>Defaced product photos within the application.</li>
+              <li>All findings were reported to the Kopi Ajoe cybersecurity team for remediation.</li>
+            </ul>
             <div className="grid grid-cols-2 gap-4 mt-4">
               <a href="/gallery/kopi-ajoe-1.jpg" target="_blank" rel="noopener" className="card overflow-hidden block">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
