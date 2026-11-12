@@ -79,7 +79,7 @@ export default function Home() {
               <div className="card p-6">
                 <ul className="space-y-2 text-sm">
                   <li><span className="text-muted">Role:</span> Full Stack Web Developer</li>
-                  <li><span className="text-muted">Field:</span> Ethical Hacker / Security</li>
+                  <li><span className="text-muted">Field:</span> Grey Hat</li>
                   <li><span className="text-muted">Location:</span> Payakumbuh, West Sumatra</li>
                   <li><span className="text-muted">Focus:</span> Web Apps, Security, Networking</li>
                 </ul>
