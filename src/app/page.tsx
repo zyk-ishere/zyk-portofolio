@@ -200,25 +200,40 @@ export default function Home() {
           <p className="mono text-sm text-muted mb-2">07 — Contact</p>
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Contact Me</h2>
           <div className="grid md:grid-cols-2 gap-6">
-            <a href="mailto:qwertyuzyk420@gmail.com" className="card p-6 hover:bg-card/80 transition">
-              <div className="font-semibold">Email</div>
-              <div className="mono text-sm text-muted mt-1">qwertyuzyk420@gmail.com</div>
+            <a href="mailto:qwertyuzyk420@gmail.com" className="card p-6 hover:bg-card/80 transition flex items-center gap-4">
+              <svg className="w-6 h-6 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 5L2 7"/></svg>
+              <div>
+                <div className="font-semibold">Email</div>
+                <div className="mono text-sm text-muted mt-1">qwertyuzyk420@gmail.com</div>
+              </div>
             </a>
-            <a href="https://wa.me/6281267284236" target="_blank" rel="noopener" className="card p-6 hover:bg-card/80 transition">
-              <div className="font-semibold">WhatsApp</div>
-              <div className="mono text-sm text-muted mt-1">+62 812-6728-4236</div>
+            <a href="https://wa.me/6281267284236" target="_blank" rel="noopener" className="card p-6 hover:bg-card/80 transition flex items-center gap-4">
+              <svg className="w-6 h-6 shrink-0" viewBox="0 0 24 24" fill="currentColor"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.6-.92-2.2-.24-.57-.49-.5-.67-.5h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48s1.07 2.88 1.22 3.08c.15.2 2.1 3.2 5.08 4.49.71.31 1.27.49 1.7.63.71.23 1.36.2 1.87.12.57-.08 1.76-.72 2.01-1.41.25-.69.25-1.28.17-1.41-.07-.12-.27-.2-.57-.35zM12 2C6.48 2 2 6.48 2 12c0 1.83.49 3.54 1.34 5.02L2 22l5.15-1.34A9.96 9.96 0 0 0 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2z"/></svg>
+              <div>
+                <div className="font-semibold">WhatsApp</div>
+                <div className="mono text-sm text-muted mt-1">+62 812-6728-4236</div>
+              </div>
             </a>
-            <a href="https://instagram.com/zyk.1sheremf" target="_blank" rel="noopener" className="card p-6 hover:bg-card/80 transition">
-              <div className="font-semibold">Instagram</div>
-              <div className="mono text-sm text-muted mt-1">@zyk.1sheremf</div>
+            <a href="https://instagram.com/zyk.1sheremf" target="_blank" rel="noopener" className="card p-6 hover:bg-card/80 transition flex items-center gap-4">
+              <svg className="w-6 h-6 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              <div>
+                <div className="font-semibold">Instagram</div>
+                <div className="mono text-sm text-muted mt-1">@zyk.1sheremf</div>
+              </div>
             </a>
-            <a href="https://github.com/zyk-ishere" target="_blank" rel="noopener" className="card p-6 hover:bg-card/80 transition">
-              <div className="font-semibold">GitHub</div>
-              <div className="mono text-sm text-muted mt-1">zyk-ishere</div>
+            <a href="https://github.com/zyk-ishere" target="_blank" rel="noopener" className="card p-6 hover:bg-card/80 transition flex items-center gap-4">
+              <svg className="w-6 h-6 shrink-0" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.604-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.464-1.11-1.464-.908-.62.069-.608.069-.608 1.004.07 1.532 1.03 1.532 1.03.892 1.529 2.341 1.087 2.91.831.092-.646.35-1.086.636-1.336-2.221-.253-4.559-1.11-4.559-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.025A9.58 9.58 0 0 1 12 6.844a9.59 9.59 0 0 1 2.504.337c1.909-1.294 2.747-1.025 2.747-1.025.546 1.377.203 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.34 4.687-4.566 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.481C19.138 20.161 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+              <div>
+                <div className="font-semibold">GitHub</div>
+                <div className="mono text-sm text-muted mt-1">zyk-ishere</div>
+              </div>
             </a>
-            <a href="https://discord.com" target="_blank" rel="noopener" className="card p-6 hover:bg-card/80 transition">
-              <div className="font-semibold">Discord</div>
-              <div className="mono text-sm text-muted mt-1">zyk0363</div>
+            <a href="https://discord.com" target="_blank" rel="noopener" className="card p-6 hover:bg-card/80 transition flex items-center gap-4">
+              <svg className="w-6 h-6 shrink-0" viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.37a19.79 19.79 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.74 19.74 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.1 13.1 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.009c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.3 12.3 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.84 19.84 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.06.06 0 0 0-.031-.03z"/></svg>
+              <div>
+                <div className="font-semibold">Discord</div>
+                <div className="mono text-sm text-muted mt-1">zyk0363</div>
+              </div>
             </a>
           </div>
         </div>
