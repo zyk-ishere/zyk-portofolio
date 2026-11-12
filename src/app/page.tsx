@@ -275,9 +275,27 @@ export default function Home() {
       </section>
 
       <footer className="border-t border-line py-8">
-        <div className="container text-sm text-muted flex justify-between">
-          <span>© 2026 Taufik Zaqi</span>
-          <span className="mono">built with next.js</span>
+        <div className="container">
+          <div className="flex flex-col items-start justify-between gap-4 pb-8 mb-8 border-b border-line sm:flex-row sm:items-center">
+            <div>
+              <p className="text-sm font-semibold">Want a website like this?</p>
+              <p className="text-sm text-muted mt-1">
+                Website development services by Devzy — landing pages, company profiles, and custom web apps.
+              </p>
+            </div>
+            <a
+              href="https://devzy.site"
+              target="_blank"
+              rel="noopener"
+              className="btn btn-ghost shrink-0"
+            >
+              Visit devzy.site
+            </a>
+          </div>
+          <div className="text-sm text-muted flex justify-between">
+            <span>© 2026 Taufik Zaqi</span>
+            <span className="mono">built with next.js</span>
+          </div>
         </div>
       </footer>
     </main>
