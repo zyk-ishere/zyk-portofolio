@@ -1,3 +1,5 @@
+import { RevealObserver } from "@/components/reveal-observer";
+
 export default function Home() {
   const projects = [
     { title: "Kostin — Boarding House Management", desc: "Boarding house payment and billing system: room & tenant data, monthly invoices, proof-of-transfer verification. PWA.", tags: ["Next.js", "PWA", "Supabase"], link: "https://www.konstin.my.id/" },
@@ -8,36 +10,37 @@ export default function Home() {
 
   return (
     <main className="min-h-screen">
+      <RevealObserver />
       {/* NAV */}
       <nav className="fixed top-0 inset-x-0 z-50 border-b border-line bg-background/80 backdrop-blur">
         <div className="container flex items-center justify-between h-16">
           <a href="#home" className="mono font-semibold">taufik<span className="text-muted">.</span>zaqi</a>
           <div className="hidden md:flex gap-6 text-sm text-muted">
             {["about","skills","projects","security","certificates","cv","contact"].map(s => (
-              <a key={s} href={`#${s}`} className="hover:text-foreground transition capitalize">{s === "cv" ? "CV" : s}</a>
+              <a key={s} href={`#${s}`} className="hover:text-foreground transition capitalize nav-link">{s === "cv" ? "CV" : s}</a>
             ))}
           </div>
         </div>
       </nav>
 
       {/* HERO */}
-      <section id="home" className="section pt-32">
+      <section id="home" className="section pt-32 reveal">
         <div className="container">
-          <p className="mono text-sm text-muted mb-4">$ whoami</p>
-          <h1 className="text-5xl md:text-7xl font-bold leading-tight">
+          <p className="mono text-sm text-muted mb-4 hero-sub">$ whoami</p>
+          <h1 className="text-5xl md:text-7xl font-bold leading-tight hero-title">
             Taufik Zaqi
           </h1>
-          <p className="text-xl md:text-2xl text-muted mt-4">
+          <p className="text-xl md:text-2xl text-muted mt-4 hero-sub">
             Who Am I
           </p>
-          <p className="text-lg md:text-xl mt-2">
+          <p className="text-lg md:text-xl mt-2 hero-sub">
             Full Stack Web Developer · Ethical Hacker
           </p>
-          <p className="mt-6 max-w-2xl text-muted">
+          <p className="mt-6 max-w-2xl text-muted hero-desc">
             Building end-to-end web applications and performing ethical security testing.
             Documenting projects, skills, and the learning journey in IT.
           </p>
-          <div className="mt-8 flex gap-3">
+          <div className="mt-8 flex gap-3 hero-cta">
             <a href="#projects" className="btn btn-primary">View Projects</a>
             <a href="#contact" className="btn btn-ghost">Contact Me</a>
           </div>
@@ -45,7 +48,7 @@ export default function Home() {
       </section>
 
       {/* ABOUT */}
-      <section id="about" className="section border-t border-line">
+      <section id="about" className="section border-t border-line reveal">
         <div className="container">
           <p className="mono text-sm text-muted mb-2">01 — About</p>
           <h2 className="text-3xl md:text-4xl font-bold mb-6">About Me</h2>
@@ -74,26 +77,26 @@ export default function Home() {
       </section>
 
       {/* SKILLS */}
-      <section id="skills" className="section border-t border-line">
+      <section id="skills" className="section border-t border-line reveal">
         <div className="container">
           <p className="mono text-sm text-muted mb-2">02 — Skills</p>
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Skills</h2>
           <div className="flex flex-wrap gap-3">
-            {skills.map(s => (
-              <span key={s} className="mono text-sm px-4 py-2 rounded-lg border border-line bg-card">{s}</span>
+            {skills.map((s, i) => (
+              <span key={s} className="mono text-sm px-4 py-2 rounded-lg border border-line bg-card mono-tag reveal" style={{ transitionDelay: `${i * 50}ms` }}>{s}</span>
             ))}
           </div>
         </div>
       </section>
 
       {/* PROJECTS */}
-      <section id="projects" className="section border-t border-line">
+      <section id="projects" className="section border-t border-line reveal">
         <div className="container">
           <p className="mono text-sm text-muted mb-2">03 — Projects</p>
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Featured Projects</h2>
           <div className="grid md:grid-cols-2 gap-6">
-            {projects.map(p => (
-              <article key={p.title} className="card p-6 flex flex-col">
+            {projects.map((p, i) => (
+              <article key={p.title} className="card p-6 flex flex-col reveal" style={{ transitionDelay: `${i * 100}ms` }}>
                 <h3 className="text-xl font-semibold">{p.title}</h3>
                 <p className="text-muted mt-2 flex-1">{p.desc}</p>
                 <div className="flex flex-wrap gap-2 mt-4">
@@ -107,7 +110,7 @@ export default function Home() {
       </section>
 
       {/* SECURITY RESEARCHER */}
-      <section id="security" className="section border-t border-line">
+      <section id="security" className="section border-t border-line reveal">
         <div className="container">
           <p className="mono text-sm text-muted mb-2">04 — Security Researcher</p>
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Security Research</h2>
@@ -137,7 +140,7 @@ export default function Home() {
       </section>
 
       {/* CERTIFICATES */}
-      <section id="certificates" className="section border-t border-line">
+      <section id="certificates" className="section border-t border-line reveal">
         <div className="container">
           <p className="mono text-sm text-muted mb-2">05 — Certificates</p>
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Certificates</h2>
@@ -159,7 +162,7 @@ export default function Home() {
       </section>
 
       {/* CV */}
-      <section id="cv" className="section border-t border-line">
+      <section id="cv" className="section border-t border-line reveal">
         <div className="container">
           <p className="mono text-sm text-muted mb-2">06 — Curriculum Vitae</p>
           <h2 className="text-3xl md:text-4xl font-bold mb-6">CV Taufik Zaqi</h2>
@@ -171,7 +174,7 @@ export default function Home() {
       </section>
 
       {/* CONTACT */}
-      <section id="contact" className="section border-t border-line">
+      <section id="contact" className="section border-t border-line reveal">
         <div className="container">
           <p className="mono text-sm text-muted mb-2">07 — Contact</p>
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Contact Me</h2>
