@@ -1,8 +1,8 @@
 export default function Home() {
   const projects = [
-    { title: "ZYK — Personal Link Hub", desc: "Halaman penghubung pribadi bergaya dark glassmorphism. Menyatukan Instagram, WhatsApp, dan Discord dalam satu tautan.", tags: ["HTML", "CSS", "Bootstrap"], link: "https://zyks.netlify.app/" },
-    { title: "Kostin — Manajemen Kost", desc: "Sistem pembayaran dan penagihan kost: data kamar, penghuni, tagihan bulanan, verifikasi bukti transfer. PWA.", tags: ["Next.js", "PWA", "Supabase"], link: "https://www.konstin.my.id/" },
-    { title: "Duidi", desc: "Aplikasi keuangan pribadi dan perencanaan finansial. Catat pemasukan/pengeluaran, kelola anggaran.", tags: ["Next.js", "PWA", "Finansial"], link: "https://www.duidi.web.id/" },
+    { title: "ZYK — Personal Link Hub", desc: "Personal link-in-bio page with dark glassmorphism. Unifies Instagram, WhatsApp, and Discord in one link, responsive, deployed on Netlify.", tags: ["HTML", "CSS", "Bootstrap"], link: "https://zyks.netlify.app/" },
+    { title: "Kostin — Boarding House Management", desc: "Boarding house payment and billing system: room & tenant data, monthly invoices, proof-of-transfer verification. PWA.", tags: ["Next.js", "PWA", "Supabase"], link: "https://www.konstin.my.id/" },
+    { title: "Duidi", desc: "Personal finance and financial planning app. Track income/expenses, manage budgets.", tags: ["Next.js", "PWA", "Finance"], link: "https://www.duidi.web.id/" },
   ];
   const skills = ["Full Stack Development", "React / Next.js", "Node.js", "TypeScript", "Ethical Hacking", "Web App Security", "Networking", "Linux", "Supabase", "Tailwind CSS"];
 
@@ -14,7 +14,7 @@ export default function Home() {
           <a href="#home" className="mono font-semibold">taufik<span className="text-muted">.</span>zaqi</a>
           <div className="hidden md:flex gap-6 text-sm text-muted">
             {["about","skills","projects","security","certificates","cv","contact"].map(s => (
-              <a key={s} href={`#${s}`} className="hover:text-foreground transition">{s}</a>
+              <a key={s} href={`#${s}`} className="hover:text-foreground transition capitalize">{s === "cv" ? "CV" : s}</a>
             ))}
           </div>
         </div>
@@ -34,12 +34,12 @@ export default function Home() {
             Full Stack Web Developer · Ethical Hacker
           </p>
           <p className="mt-6 max-w-2xl text-muted">
-            Membangun aplikasi web end-to-end dan melakukan pengujian keamanan secara etis.
-            Mendokumentasikan proyek, keterampilan, dan perjalanan belajar di bidang IT.
+            Building end-to-end web applications and performing ethical security testing.
+            Documenting projects, skills, and the learning journey in IT.
           </p>
           <div className="mt-8 flex gap-3">
-            <a href="#projects" className="btn btn-primary">Lihat Proyek</a>
-            <a href="#contact" className="btn btn-ghost">Hubungi Saya</a>
+            <a href="#projects" className="btn btn-primary">View Projects</a>
+            <a href="#contact" className="btn btn-ghost">Contact Me</a>
           </div>
         </div>
       </section>
@@ -47,25 +47,25 @@ export default function Home() {
       {/* ABOUT */}
       <section id="about" className="section border-t border-line">
         <div className="container">
-          <p className="mono text-sm text-muted mb-2">01 — Tentang</p>
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">Tentang Saya</h2>
+          <p className="mono text-sm text-muted mb-2">01 — About</p>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">About Me</h2>
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div className="card overflow-hidden">
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src="/img/taufik.jpg" alt="Foto Taufik Zaqi" className="w-full h-auto object-contain" />
+              <img src="/img/taufik.jpg" alt="Photo of Taufik Zaqi" className="w-full h-auto object-contain" />
             </div>
             <div className="space-y-4">
               <p className="text-muted leading-relaxed">
-                Saya adalah Full Stack Web Developer dan Ethical Hacker. Membangun aplikasi web
-                end-to-end — dari frontend hingga backend — serta melakukan pengujian keamanan
-                secara etis untuk menemukan dan memperbaiki celah.
+                I am a Full Stack Web Developer and Ethical Hacker. I build web applications
+                end-to-end — from frontend to backend — and perform ethical security testing
+                to find and fix vulnerabilities.
               </p>
               <div className="card p-6">
                 <ul className="space-y-2 text-sm">
-                  <li><span className="text-muted">Peran:</span> Full Stack Web Developer</li>
-                  <li><span className="text-muted">Bidang:</span> Ethical Hacker / Security</li>
-                  <li><span className="text-muted">Lokasi:</span> Payakumbuh, Sumatera Barat</li>
-                  <li><span className="text-muted">Fokus:</span> Web Apps, Security, Networking</li>
+                  <li><span className="text-muted">Role:</span> Full Stack Web Developer</li>
+                  <li><span className="text-muted">Field:</span> Ethical Hacker / Security</li>
+                  <li><span className="text-muted">Location:</span> Payakumbuh, West Sumatra</li>
+                  <li><span className="text-muted">Focus:</span> Web Apps, Security, Networking</li>
                 </ul>
               </div>
             </div>
@@ -76,7 +76,7 @@ export default function Home() {
       {/* SKILLS */}
       <section id="skills" className="section border-t border-line">
         <div className="container">
-          <p className="mono text-sm text-muted mb-2">02 — Keahlian</p>
+          <p className="mono text-sm text-muted mb-2">02 — Skills</p>
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Skills</h2>
           <div className="flex flex-wrap gap-3">
             {skills.map(s => (
@@ -89,8 +89,8 @@ export default function Home() {
       {/* PROJECTS */}
       <section id="projects" className="section border-t border-line">
         <div className="container">
-          <p className="mono text-sm text-muted mb-2">03 — Proyek</p>
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">Proyek Unggulan</h2>
+          <p className="mono text-sm text-muted mb-2">03 — Projects</p>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">Featured Projects</h2>
           <div className="grid md:grid-cols-2 gap-6">
             {projects.map(p => (
               <article key={p.title} className="card p-6 flex flex-col">
@@ -99,7 +99,7 @@ export default function Home() {
                 <div className="flex flex-wrap gap-2 mt-4">
                   {p.tags.map(t => <span key={t} className="mono text-xs px-2 py-1 rounded border border-line">{t}</span>)}
                 </div>
-                <a href={p.link} target="_blank" rel="noopener" className="mt-4 text-sm hover:underline">Kunjungi →</a>
+                <a href={p.link} target="_blank" rel="noopener" className="mt-4 text-sm hover:underline">Visit →</a>
               </article>
             ))}
           </div>
@@ -119,17 +119,17 @@ export default function Home() {
             </div>
             <h3 className="text-xl font-semibold">Kopi Ajoe — Authorized Security Assessment</h3>
             <p className="text-muted mt-2">
-              Pengujian keamanan dengan izin pemilik aplikasi. Ditemukan kelemahan yang
-              memungkinkan penggantian konten produk; temuan dilaporkan dan ditindaklanjuti.
+              Authorized security testing on the application owner's permission. Found a vulnerability
+              that allowed product content replacement; findings were reported and remediated.
             </p>
             <div className="grid grid-cols-2 gap-4 mt-4">
               <a href="/gallery/kopi-ajoe-1.jpg" target="_blank" rel="noopener" className="card overflow-hidden block">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="/gallery/kopi-ajoe-1.jpg" alt="Bukti deface Kopi Ajoe 1" className="w-full h-40 object-cover" />
+                <img src="/gallery/kopi-ajoe-1.jpg" alt="Kopi Ajoe defacement evidence 1" className="w-full h-40 object-cover" />
               </a>
               <a href="/gallery/kopi-ajoe-2.jpg" target="_blank" rel="noopener" className="card overflow-hidden block">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src="/gallery/kopi-ajoe-2.jpg" alt="Bukti deface Kopi Ajoe 2" className="w-full h-40 object-cover" />
+                <img src="/gallery/kopi-ajoe-2.jpg" alt="Kopi Ajoe defacement evidence 2" className="w-full h-40 object-cover" />
               </a>
             </div>
           </article>
@@ -139,20 +139,20 @@ export default function Home() {
       {/* CERTIFICATES */}
       <section id="certificates" className="section border-t border-line">
         <div className="container">
-          <p className="mono text-sm text-muted mb-2">05 — Sertifikat</p>
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">Sertifikat</h2>
+          <p className="mono text-sm text-muted mb-2">05 — Certificates</p>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">Certificates</h2>
           <div className="grid md:grid-cols-2 gap-4">
             <a href="/certificates/sertifikat-cadiak-ctf.pdf" target="_blank" rel="noopener" className="card p-6 hover:bg-card/80 transition">
-              Sertifikat CTF CADIAK 2026 (PDF)
+              CTF CADIAK 2026 Certificate (PDF)
             </a>
             <a href="/certificates/sertifikat-english-learner-2.pdf" target="_blank" rel="noopener" className="card p-6 hover:bg-card/80 transition">
-              Sertifikat English Learner (PDF)
+              English Learner Certificate (PDF)
             </a>
             <a href="/certificates/sertifikat-network-fundamental.pdf" target="_blank" rel="noopener" className="card p-6 hover:bg-card/80 transition">
-              Sertifikat Network Fundamental (PDF)
+              Network Fundamental Certificate (PDF)
             </a>
             <a href="/certificates/sertifikat-python-fundamental.pdf" target="_blank" rel="noopener" className="card p-6 hover:bg-card/80 transition">
-              Sertifikat Python Fundamental (PDF)
+              Python Fundamental Certificate (PDF)
             </a>
           </div>
         </div>
@@ -163,9 +163,9 @@ export default function Home() {
         <div className="container">
           <p className="mono text-sm text-muted mb-2">06 — Curriculum Vitae</p>
           <h2 className="text-3xl md:text-4xl font-bold mb-6">CV Taufik Zaqi</h2>
-          <p className="text-muted mb-6">Ringkasan CV dalam bentuk dokumen PDF. Bisa dilihat atau diunduh langsung.</p>
+          <p className="text-muted mb-6">CV summary in PDF format. View or download directly.</p>
           <a href="/cv/cv-taufik-zaqi.pdf" target="_blank" rel="noopener" className="btn btn-primary">
-            Lihat / Unduh CV (PDF)
+            View / Download CV (PDF)
           </a>
         </div>
       </section>
@@ -173,8 +173,8 @@ export default function Home() {
       {/* CONTACT */}
       <section id="contact" className="section border-t border-line">
         <div className="container">
-          <p className="mono text-sm text-muted mb-2">07 - Kontak</p>
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">Hubungi Saya</h2>
+          <p className="mono text-sm text-muted mb-2">07 — Contact</p>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">Contact Me</h2>
           <div className="grid md:grid-cols-2 gap-6">
             <a href="mailto:qwertyuzyk420@gmail.com" className="card p-6 hover:bg-card/80 transition">Email</a>
             <a href="https://wa.me/6281267284236" target="_blank" rel="noopener" className="card p-6 hover:bg-card/80 transition">WhatsApp</a>
