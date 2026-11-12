@@ -1,69 +1,132 @@
-import Image from "next/image";
-
 export default function Home() {
+  const projects = [
+    { title: "ZYK — Personal Link Hub", desc: "Halaman penghubung pribadi bergaya dark glassmorphism. Menyatukan Instagram, WhatsApp, dan Discord dalam satu tautan.", tags: ["HTML", "CSS", "Bootstrap"], link: "https://zyks.netlify.app/" },
+    { title: "Kostin — Manajemen Kost", desc: "Sistem pembayaran dan penagihan kost: data kamar, penghuni, tagihan bulanan, verifikasi bukti transfer. PWA.", tags: ["Next.js", "PWA", "Supabase"], link: "https://www.konstin.my.id/" },
+    { title: "Keuangan Mahir", desc: "Aplikasi keuangan pribadi dan perencanaan finansial. Catat pemasukan/pengeluaran, kelola anggaran.", tags: ["Next.js", "PWA", "Finansial"], link: "https://www.duidi.web.id/" },
+    { title: "Kopi Ajoe — Security Assessment", desc: "Pengujian keamanan dengan izin pemilik. Temuan dilaporkan dan ditindaklanjuti.", tags: ["Bug Hunting", "Web Security", "Authorized"], link: "#" },
+  ];
+  const skills = ["Networking", "Linux", "Web Development", "Bug Hunting", "JavaScript", "Next.js", "Supabase", "Tailwind CSS"];
+
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert h-5 w-[100px]"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the{" "}
-            <code className="rounded bg-black/[.06] px-1.5 py-0.5 font-mono text-[0.9em] dark:bg-white/[.08]">
-              page.tsx
-            </code>{" "}
-            file.
+    <main className="min-h-screen">
+      {/* NAV */}
+      <nav className="fixed top-0 inset-x-0 z-50 border-b border-line bg-background/80 backdrop-blur">
+        <div className="container flex items-center justify-between h-16">
+          <a href="#home" className="mono font-semibold">taufik<span className="text-muted">.</span>zaqi</a>
+          <div className="hidden md:flex gap-6 text-sm text-muted">
+            {["about","skills","projects","gallery","contact"].map(s => (
+              <a key={s} href={`#${s}`} className="hover:text-foreground transition">{s}</a>
+            ))}
+          </div>
+        </div>
+      </nav>
+
+      {/* HERO */}
+      <section id="home" className="section pt-32">
+        <div className="container">
+          <p className="mono text-sm text-muted mb-4">$ whoami</p>
+          <h1 className="text-5xl md:text-7xl font-bold leading-tight">
+            Taufik Zaqi
           </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+          <p className="text-xl md:text-2xl text-muted mt-4">
+            Network Enthusiast · Web Developer · Aspiring Bug Hunter
           </p>
+          <p className="mt-6 max-w-2xl text-muted">
+            Siswa SMKN 4 Payakumbuh, jurusan Teknik Komputer dan Jaringan. Mendokumentasikan
+            proyek, keterampilan, dan perjalanan belajar di bidang IT.
+          </p>
+          <div className="mt-8 flex gap-3">
+            <a href="#projects" className="btn btn-primary">Lihat Proyek</a>
+            <a href="#contact" className="btn btn-ghost">Hubungi Saya</a>
+          </div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert h-[14px] w-4"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+      </section>
+
+      {/* ABOUT */}
+      <section id="about" className="section border-t border-line">
+        <div className="container">
+          <p className="mono text-sm text-muted mb-2">01 — Tentang</p>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">Tentang Saya</h2>
+          <div className="grid md:grid-cols-2 gap-8">
+            <p className="text-muted leading-relaxed">
+              Saya adalah siswa SMKN 4 Payakumbuh dengan jurusan Teknik Komputer dan Jaringan.
+              Tertarik pada administrasi jaringan, keamanan siber, dan pengembangan web.
+              Aktif mengikuti kompetisi CTF dan membangun aplikasi web fungsional.
+            </p>
+            <div className="card p-6">
+              <ul className="space-y-2 text-sm">
+                <li><span className="text-muted">Sekolah:</span> SMKN 4 Payakumbuh</li>
+                <li><span className="text-muted">Jurusan:</span> Teknik Komputer & Jaringan</li>
+                <li><span className="text-muted">Lokasi:</span> Payakumbuh, Sumatera Barat</li>
+                <li><span className="text-muted">Minat:</span> Networking, Web Dev, Security</li>
+              </ul>
+            </div>
+          </div>
         </div>
-      </main>
-    </div>
+      </section>
+
+      {/* SKILLS */}
+      <section id="skills" className="section border-t border-line">
+        <div className="container">
+          <p className="mono text-sm text-muted mb-2">02 — Keahlian</p>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">Skills</h2>
+          <div className="flex flex-wrap gap-3">
+            {skills.map(s => (
+              <span key={s} className="mono text-sm px-4 py-2 rounded-lg border border-line bg-card">{s}</span>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* PROJECTS */}
+      <section id="projects" className="section border-t border-line">
+        <div className="container">
+          <p className="mono text-sm text-muted mb-2">03 — Proyek</p>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">Proyek Unggulan</h2>
+          <div className="grid md:grid-cols-2 gap-6">
+            {projects.map(p => (
+              <article key={p.title} className="card p-6 flex flex-col">
+                <h3 className="text-xl font-semibold">{p.title}</h3>
+                <p className="text-muted mt-2 flex-1">{p.desc}</p>
+                <div className="flex flex-wrap gap-2 mt-4">
+                  {p.tags.map(t => <span key={t} className="mono text-xs px-2 py-1 rounded border border-line">{t}</span>)}
+                </div>
+                <a href={p.link} target="_blank" rel="noopener" className="mt-4 text-sm hover:underline">Kunjungi →</a>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* GALLERY */}
+      <section id="gallery" className="section border-t border-line">
+        <div className="container">
+          <p className="mono text-sm text-muted mb-2">04 — Galeri</p>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">Galeri</h2>
+          <p className="text-muted">Foto kegiatan, kompetisi, dan sertifikat akan ditampilkan di sini.</p>
+        </div>
+      </section>
+
+      {/* CONTACT */}
+      <section id="contact" className="section border-t border-line">
+        <div className="container">
+          <p className="mono text-sm text-muted mb-2">05 — Kontak</p>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">Hubungi Saya</h2>
+          <div className="grid md:grid-cols-2 gap-6">
+            <a href="mailto:zaqi@example.com" className="card p-6 hover:bg-card/80 transition">Email</a>
+            <a href="https://wa.me/6289675101657" target="_blank" rel="noopener" className="card p-6 hover:bg-card/80 transition">WhatsApp</a>
+            <a href="https://instagram.com/" target="_blank" rel="noopener" className="card p-6 hover:bg-card/80 transition">Instagram</a>
+            <a href="https://github.com/" target="_blank" rel="noopener" className="card p-6 hover:bg-card/80 transition">GitHub</a>
+          </div>
+        </div>
+      </section>
+
+      <footer className="border-t border-line py-8">
+        <div className="container text-sm text-muted flex justify-between">
+          <span>© 2026 Taufik Zaqi</span>
+          <span className="mono">built with next.js</span>
+        </div>
+      </footer>
+    </main>
   );
 }
