@@ -8,7 +8,7 @@ export default function Home() {
     { title: "Zykk Store", desc: "Social media booster service (SMM provider): increase followers, likes, and reposts instantly. Fast, safe, competitive pricing.", tags: ["HTML", "CSS", "JavaScript"], link: "https://zykk-store.netlify.app/" },
     { title: "ZYK — Personal Link Hub", desc: "Personal link-in-bio page with dark glassmorphism. Unifies Instagram, WhatsApp, and Discord in one link, responsive, deployed on Netlify.", tags: ["HTML", "CSS", "Bootstrap"], link: "https://zyks.netlify.app/" },
   ];
-  const skills = ["Full Stack Development", "React / Next.js", "Node.js", "TypeScript", "Ethical Hacking", "Web App Security", "Networking", "Linux (parrot os)", "Supabase", "Tailwind CSS"];
+  const skills = ["Full Stack Development", "React / Next.js", "Node.js", "TypeScript", "Ethical Hacking", "Web App Security", "Networking", "Linux (parrot os, debian 12)", "Supabase", "Tailwind CSS"];
 
   return (
     <main className="min-h-screen">
