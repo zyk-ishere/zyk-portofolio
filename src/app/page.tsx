@@ -200,13 +200,28 @@ export default function Home() {
           <p className="mono text-sm text-muted mb-2">07 — Services</p>
           <h2 className="text-3xl md:text-4xl font-bold mb-6">Web Development Services</h2>
           <p className="text-muted mb-6 max-w-2xl">
-            I also offer website development services — from landing pages and portfolios to
-            functional web applications. Responsive, fast, and tailored to your needs.
-            Contact me via WhatsApp for more info and a free consultation.
+            I also offer website development services through{" "}
+            <span className="text-foreground font-medium">Devzy</span> — from landing pages and
+            company profiles to custom web applications. Responsive, fast, and tailored to your
+            needs. See the packages, portfolio, and pricing at{" "}
+            <a
+              href="https://devzy.site"
+              target="_blank"
+              rel="noopener"
+              className="underline underline-offset-4 hover:text-foreground transition"
+            >
+              devzy.site
+            </a>
+            .
           </p>
-          <a href="https://wa.me/6281267284236?text=Halo%20Taufik,%20saya%20tertarik%20dengan%20jasa%20pembuatan%20website." target="_blank" rel="noopener" className="btn btn-primary">
-            Contact via WhatsApp
-          </a>
+          <div className="flex flex-wrap gap-3">
+            <a href="https://devzy.site" target="_blank" rel="noopener" className="btn btn-primary">
+              Visit devzy.site
+            </a>
+            <a href="https://wa.me/6281267284236?text=Halo%20Taufik,%20saya%20tertarik%20dengan%20jasa%20pembuatan%20website." target="_blank" rel="noopener" className="btn btn-ghost">
+              Contact via WhatsApp
+            </a>
+          </div>
         </div>
       </section>
 
