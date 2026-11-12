@@ -133,10 +133,7 @@ export default function Home() {
               <span className="mono text-xs px-2 py-1 rounded border border-line">Authorized</span>
             </div>
             <h3 className="text-xl font-semibold">Kopi Ajoe — Authorized Security Assessment</h3>
-            <p className="text-muted mt-2">
-              Authorized security testing on the application owner's permission. Found a vulnerability
-              that allowed product content replacement; findings were reported and remediated.
-            </p>
+
             <div className="grid grid-cols-2 gap-4 mt-4">
               <a href="/gallery/kopi-ajoe-1.jpg" target="_blank" rel="noopener" className="card overflow-hidden block">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
