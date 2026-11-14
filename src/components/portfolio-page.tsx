@@ -181,6 +181,39 @@ export function PortfolioPage({
                   ))}
                 </ul>
               </div>
+
+              <div className="card p-6">
+                <p className="mono text-xs text-muted mb-3 uppercase tracking-wider">
+                  {content.about.education.label}
+                </p>
+                <div className="flex items-start gap-3">
+                  <svg
+                    className="w-5 h-5 mt-0.5 shrink-0 text-muted"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="1.8"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    aria-hidden="true"
+                  >
+                    <path d="M3 9.5 12 4l9 5.5" />
+                    <path d="M5 10v9h14v-9" />
+                    <path d="M9 19v-5h6v5" />
+                  </svg>
+                  <div>
+                    <div className="font-semibold">
+                      {content.about.education.school}
+                    </div>
+                    <div className="text-sm text-muted">
+                      {content.about.education.major}
+                    </div>
+                    <div className="mono text-xs text-muted mt-1">
+                      {content.about.education.period}
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>

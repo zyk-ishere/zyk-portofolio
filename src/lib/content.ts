@@ -50,6 +50,12 @@ export type Content = {
     body: string;
     photoAlt: string;
     facts: Fact[];
+    education: {
+      label: string;
+      school: string;
+      major: string;
+      period: string;
+    };
   };
   skills: { eyebrow: string; title: string; items: string[] };
   projects: {
@@ -145,6 +151,12 @@ const en: Content = {
       { label: "Location", value: "Payakumbuh, West Sumatra" },
       { label: "Focus", value: "Web Apps, Security, Networking" },
     ],
+    education: {
+      label: "Education",
+      school: "SMK Negeri 4 Payakumbuh — Bluetech IT School",
+      major: "Computer & Network Engineering (TKJ)",
+      period: "2024 — present · Grade XII",
+    },
   },
   skills: {
     eyebrow: "02 — Skills",
@@ -372,6 +384,12 @@ const id: Content = {
       { label: "Lokasi", value: "Payakumbuh, Sumatera Barat" },
       { label: "Fokus", value: "Web App, Keamanan, Jaringan" },
     ],
+    education: {
+      label: "Pendidikan",
+      school: "SMK Negeri 4 Payakumbuh — Bluetech IT School",
+      major: "Teknik Komputer dan Jaringan (TKJ)",
+      period: "2024 — sekarang · Kelas XII",
+    },
   },
   skills: {
     eyebrow: "02 — Keahlian",
