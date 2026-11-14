@@ -105,11 +105,11 @@ export function PortfolioPage({
 
       {/* HERO */}
       <section id="home" className="section pt-32 reveal">
-        <div className="container text-center md:text-left">
+        <div className="container">
           <p className="mono text-sm text-muted mb-4 hero-sub">
             {content.hero.whoami}
           </p>
-          <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold leading-tight hero-title">
+          <h1 className="text-5xl md:text-7xl font-bold leading-tight hero-title">
             {content.hero.name}
           </h1>
           <p className="text-xl md:text-2xl text-muted mt-4 hero-sub">
@@ -118,10 +118,10 @@ export function PortfolioPage({
           <p className="text-lg md:text-xl mt-2 hero-sub mono">
             <TypingText texts={content.hero.roles} />
           </p>
-          <p className="mt-6 max-w-2xl text-muted hero-desc mx-auto md:mx-0">
+          <p className="mt-6 max-w-2xl text-muted hero-desc">
             {content.hero.desc}
           </p>
-          <div className="mt-8 flex flex-wrap gap-3 hero-cta justify-center md:justify-start">
+          <div className="mt-8 flex flex-wrap gap-3 hero-cta">
             <a href="#projects" className="btn btn-primary">
               {content.hero.primaryCta}
             </a>
