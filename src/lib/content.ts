@@ -291,6 +291,13 @@ const en: Content = {
         href: "/certificates/sertifikat-linux-fundamental.pdf",
       },
       {
+        label: "Virtual Machine Fundamental",
+        issuer: "Aguna Course",
+        date: "15 November 2026",
+        credential: "AC-088-69854334-51",
+        href: "/certificates/sertifikat-virtual-machine.pdf",
+      },
+      {
         label: "Python Fundamental",
         issuer: "Aguna Course",
         date: "6 October 2026",
@@ -569,6 +576,13 @@ const id: Content = {
         date: "15 November 2026",
         credential: "AC-764-02199978-28",
         href: "/certificates/sertifikat-linux-fundamental.pdf",
+      },
+      {
+        label: "Virtual Machine Fundamental",
+        issuer: "Aguna Course",
+        date: "15 November 2026",
+        credential: "AC-088-69854334-51",
+        href: "/certificates/sertifikat-virtual-machine.pdf",
       },
       {
         label: "Python Fundamental",
