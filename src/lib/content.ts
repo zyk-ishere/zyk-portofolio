@@ -109,6 +109,7 @@ const en: Content = {
     subtitle: "Who Am I",
     roles: [
       "Full Stack Web Developer",
+      "Vibe Coder",
       "Grey Hat",
       "Network Enthusiast",
       "Bug Hunter",
@@ -120,6 +121,7 @@ const en: Content = {
   },
   marquee: [
     "Full Stack Development",
+    "Vibe Coding",
     "Ethical Hacking",
     "Web App Security",
     "Next.js",
@@ -135,10 +137,10 @@ const en: Content = {
   about: {
     eyebrow: "01 — About",
     title: "About Me",
-    body: "I am a Full Stack Web Developer, and I am still a beginner in ethical hacking. I build web applications end-to-end — from frontend to backend — and I am learning security testing to find and fix vulnerabilities.",
+    body: "I am a Full Stack Web Developer, and I am still a beginner in ethical hacking. I build web applications end-to-end — from frontend to backend — and I am learning security testing to find and fix vulnerabilities. I also work as a vibe coder — turning ideas into working products quickly with AI-assisted workflows.",
     photoAlt: "Photo of Taufik Zaqi",
     facts: [
-      { label: "Role", value: "Full Stack Web Developer" },
+      { label: "Role", value: "Full Stack Web Developer & Vibe Coder" },
       { label: "Field", value: "Grey Hat" },
       { label: "Location", value: "Payakumbuh, West Sumatra" },
       { label: "Focus", value: "Web Apps, Security, Networking" },
@@ -334,6 +336,7 @@ const id: Content = {
     subtitle: "Siapa Saya",
     roles: [
       "Full Stack Web Developer",
+      "Vibe Coder",
       "Grey Hat",
       "Penggiat Jaringan",
       "Pemburu Bug",
@@ -345,6 +348,7 @@ const id: Content = {
   },
   marquee: [
     "Full Stack Development",
+    "Vibe Coding",
     "Ethical Hacking",
     "Keamanan Web",
     "Next.js",
@@ -360,10 +364,10 @@ const id: Content = {
   about: {
     eyebrow: "01 — Tentang",
     title: "Tentang Saya",
-    body: "Saya seorang Full Stack Web Developer, dan saya masih pemula di bidang ethical hacking. Saya membangun aplikasi web dari awal sampai akhir — mulai dari frontend hingga backend — serta sedang belajar pengujian keamanan untuk menemukan dan memperbaiki celah keamanan.",
+    body: "Saya seorang Full Stack Web Developer, dan saya masih pemula di bidang ethical hacking. Saya membangun aplikasi web dari awal sampai akhir — mulai dari frontend hingga backend — serta sedang belajar pengujian keamanan untuk menemukan dan memperbaiki celah keamanan. Saya juga seorang vibe coder — mengubah ide menjadi produk yang jalan dengan cepat lewat alur kerja berbantuan AI.",
     photoAlt: "Foto Taufik Zaqi",
     facts: [
-      { label: "Peran", value: "Full Stack Web Developer" },
+      { label: "Peran", value: "Full Stack Web Developer & Vibe Coder" },
       { label: "Bidang", value: "Grey Hat" },
       { label: "Lokasi", value: "Payakumbuh, Sumatera Barat" },
       { label: "Fokus", value: "Web App, Keamanan, Jaringan" },
