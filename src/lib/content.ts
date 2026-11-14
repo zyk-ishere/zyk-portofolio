@@ -206,7 +206,7 @@ const en: Content = {
         image: { src: "/img/projects/devzy.webp", width: 1200, height: 630 },
       },
       {
-        title: "Kostin — Boarding House Management",
+        title: "Konstin — Boarding House Management",
         desc: "Boarding-house management PWA. Owners manage rooms, tenants, and monthly invoices in one dashboard, while tenants upload proof of transfer for verification — installable on a phone so it feels like a native app.",
         features: [
           "Room & tenant database",
@@ -510,7 +510,7 @@ const id: Content = {
         image: { src: "/img/projects/devzy.webp", width: 1200, height: 630 },
       },
       {
-        title: "Kostin — Manajemen Kos",
+        title: "Konstin — Manajemen Kos",
         desc: "PWA manajemen kos. Pemilik mengelola kamar, penghuni, dan tagihan bulanan dalam satu dashboard, sementara penghuni mengunggah bukti transfer untuk diverifikasi — bisa dipasang di HP sehingga terasa seperti aplikasi native.",
         features: [
           "Database kamar & penghuni",
