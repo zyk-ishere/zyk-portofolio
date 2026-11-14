@@ -1,6 +1,8 @@
+import Image from "next/image";
 import Link from "next/link";
 import type { ReactNode } from "react";
 
+import { MobileNav } from "@/components/mobile-nav";
 import { RevealObserver } from "@/components/reveal-observer";
 import { TypingText } from "@/components/typing-text";
 import type { ContactIcon, Content, Locale } from "@/lib/content";
@@ -79,6 +81,8 @@ export function PortfolioPage({
               ))}
             </div>
 
+            <MobileNav items={content.nav} labels={content.navAria} />
+
             <div className="flex items-center overflow-hidden rounded-lg border border-line text-xs mono">
               {languageLinks.map((lang) => (
                 <Link
@@ -156,10 +160,12 @@ export function PortfolioPage({
           </h2>
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div className="card overflow-hidden">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src="/img/taufik.png"
+              <Image
+                src="/img/taufik.webp"
                 alt={content.about.photoAlt}
+                width={1024}
+                height={1536}
+                sizes="(min-width: 768px) 520px, 100vw"
                 className="w-full h-auto object-contain float"
               />
             </div>
@@ -219,6 +225,21 @@ export function PortfolioPage({
                 className="card p-6 flex flex-col reveal"
                 style={{ transitionDelay: `${i * 100}ms` }}
               >
+                <a
+                  href={project.link}
+                  target="_blank"
+                  rel="noopener"
+                  className="-mx-6 -mt-6 mb-5 block overflow-hidden rounded-t-2xl border-b border-white/10"
+                >
+                  <Image
+                    src={project.image.src}
+                    alt={project.title}
+                    width={project.image.width}
+                    height={project.image.height}
+                    sizes="(min-width: 768px) 550px, 100vw"
+                    className="h-44 w-full object-cover transition-transform duration-500 hover:scale-[1.04]"
+                  />
+                </a>
                 <h3 className="text-xl font-semibold">{project.title}</h3>
                 <p className="text-muted mt-2 flex-1">{project.desc}</p>
                 <div className="flex flex-wrap gap-2 mt-4">
@@ -274,28 +295,32 @@ export function PortfolioPage({
             </ul>
             <div className="grid grid-cols-2 gap-4 mt-4">
               <a
-                href="/gallery/kopi-ajoe-1.jpg"
+                href="/gallery/kopi-ajoe-1.webp"
                 target="_blank"
                 rel="noopener"
                 className="card overflow-hidden block"
               >
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src="/gallery/kopi-ajoe-1.jpg"
+                <Image
+                  src="/gallery/kopi-ajoe-1.webp"
                   alt={content.security.imageAlts[0]}
+                  width={720}
+                  height={1548}
+                  sizes="(min-width: 768px) 480px, 45vw"
                   className="w-full h-40 object-cover"
                 />
               </a>
               <a
-                href="/gallery/kopi-ajoe-2.jpg"
+                href="/gallery/kopi-ajoe-2.webp"
                 target="_blank"
                 rel="noopener"
                 className="card overflow-hidden block"
               >
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src="/gallery/kopi-ajoe-2.jpg"
+                <Image
+                  src="/gallery/kopi-ajoe-2.webp"
                   alt={content.security.imageAlts[1]}
+                  width={716}
+                  height={1544}
+                  sizes="(min-width: 768px) 480px, 45vw"
                   className="w-full h-40 object-cover"
                 />
               </a>

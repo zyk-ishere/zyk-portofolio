@@ -10,11 +10,14 @@ export type ContactIcon =
 
 type Fact = { label: string; value: string };
 
+type ProjectImage = { src: string; width: number; height: number };
+
 type ProjectItem = {
   title: string;
   desc: string;
   tags: string[];
   link: string;
+  image: ProjectImage;
 };
 
 type CertItem = { label: string; href: string };
@@ -29,6 +32,7 @@ type ContactItem = {
 
 export type Content = {
   nav: { id: string; label: string }[];
+  navAria: { open: string; close: string };
   hero: {
     whoami: string;
     name: string;
@@ -98,6 +102,7 @@ const en: Content = {
     { id: "services", label: "Services" },
     { id: "contact", label: "Contact" },
   ],
+  navAria: { open: "Open menu", close: "Close menu" },
   hero: {
     whoami: "$ whoami",
     name: "Taufik Zaqi",
@@ -165,30 +170,35 @@ const en: Content = {
         desc: "Website service site for Devzy: landing pages, company profiles, e-commerce, and custom web apps. Includes packages, pricing, portfolio, blog, and WhatsApp consultation.",
         tags: ["Next.js", "Tailwind CSS", "Services"],
         link: "https://devzy.site",
+        image: { src: "/img/projects/devzy.webp", width: 1200, height: 630 },
       },
       {
         title: "Kostin — Boarding House Management",
         desc: "Boarding house payment and billing system: room & tenant data, monthly invoices, proof-of-transfer verification. PWA.",
         tags: ["Next.js", "PWA", "Supabase"],
         link: "https://www.konstin.my.id/",
+        image: { src: "/img/projects/konstin.webp", width: 1280, height: 900 },
       },
       {
         title: "Duidi",
         desc: "Personal finance and financial planning app. Track income/expenses, manage budgets.",
         tags: ["Next.js", "PWA", "Finance"],
         link: "https://www.duidi.web.id/",
+        image: { src: "/img/projects/duidi.webp", width: 1280, height: 900 },
       },
       {
         title: "Zykk Store",
         desc: "Social media booster service (SMM provider): increase followers, likes, and reposts instantly. Fast, safe, competitive pricing.",
         tags: ["HTML", "CSS", "JavaScript"],
         link: "https://zykk-store.netlify.app/",
+        image: { src: "/img/projects/zykk-store.webp", width: 1280, height: 900 },
       },
       {
         title: "ZYK — Personal Link Hub",
         desc: "Personal link-in-bio page with dark glassmorphism. Unifies Instagram, WhatsApp, and Discord in one link, responsive, deployed on Netlify.",
         tags: ["HTML", "CSS", "Bootstrap"],
         link: "https://zyks.netlify.app/",
+        image: { src: "/img/projects/zyks.webp", width: 1600, height: 1000 },
       },
     ],
   },
@@ -317,6 +327,7 @@ const id: Content = {
     { id: "services", label: "Layanan" },
     { id: "contact", label: "Kontak" },
   ],
+  navAria: { open: "Buka menu", close: "Tutup menu" },
   hero: {
     whoami: "$ whoami",
     name: "Taufik Zaqi",
@@ -384,30 +395,35 @@ const id: Content = {
         desc: "Website layanan Devzy: landing page, company profile, e-commerce, hingga web app custom. Dilengkapi paket harga, portofolio, blog, dan konsultasi via WhatsApp.",
         tags: ["Next.js", "Tailwind CSS", "Layanan"],
         link: "https://devzy.site",
+        image: { src: "/img/projects/devzy.webp", width: 1200, height: 630 },
       },
       {
         title: "Kostin — Manajemen Kos",
         desc: "Sistem pembayaran dan tagihan kos: data kamar & penghuni, tagihan bulanan, serta verifikasi bukti transfer. PWA.",
         tags: ["Next.js", "PWA", "Supabase"],
         link: "https://www.konstin.my.id/",
+        image: { src: "/img/projects/konstin.webp", width: 1280, height: 900 },
       },
       {
         title: "Duidi",
         desc: "Aplikasi keuangan dan perencanaan finansial pribadi. Catat pemasukan/pengeluaran dan kelola anggaran.",
         tags: ["Next.js", "PWA", "Keuangan"],
         link: "https://www.duidi.web.id/",
+        image: { src: "/img/projects/duidi.webp", width: 1280, height: 900 },
       },
       {
         title: "Zykk Store",
         desc: "Layanan penambah engagement media sosial (SMM provider): menambah followers, likes, dan repost secara instan. Cepat, aman, harga bersaing.",
         tags: ["HTML", "CSS", "JavaScript"],
         link: "https://zykk-store.netlify.app/",
+        image: { src: "/img/projects/zykk-store.webp", width: 1280, height: 900 },
       },
       {
         title: "ZYK — Link Hub Pribadi",
         desc: "Halaman link-in-bio pribadi dengan gaya dark glassmorphism. Menyatukan Instagram, WhatsApp, dan Discord dalam satu tautan, responsif, di-deploy di Netlify.",
         tags: ["HTML", "CSS", "Bootstrap"],
         link: "https://zyks.netlify.app/",
+        image: { src: "/img/projects/zyks.webp", width: 1600, height: 1000 },
       },
     ],
   },
