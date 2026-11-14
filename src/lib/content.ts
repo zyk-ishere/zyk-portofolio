@@ -298,6 +298,13 @@ const en: Content = {
         href: "/certificates/sertifikat-java-dicoding.pdf",
       },
       {
+        label: "Memulai Pemrograman Dengan C",
+        issuer: "Dicoding Indonesia",
+        date: "15 November 2026",
+        credential: "RVZKMWLJNXD5",
+        href: "/certificates/sertifikat-c-dicoding.pdf",
+      },
+      {
         label: "Linux Fundamental",
         issuer: "Aguna Course",
         date: "15 November 2026",
@@ -590,6 +597,13 @@ const id: Content = {
         date: "15 November 2026",
         credential: "1RXYDE0J3XVM",
         href: "/certificates/sertifikat-java-dicoding.pdf",
+      },
+      {
+        label: "Memulai Pemrograman Dengan C",
+        issuer: "Dicoding Indonesia",
+        date: "15 November 2026",
+        credential: "RVZKMWLJNXD5",
+        href: "/certificates/sertifikat-c-dicoding.pdf",
       },
       {
         label: "Linux Fundamental",
