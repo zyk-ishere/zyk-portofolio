@@ -22,7 +22,13 @@ type ProjectItem = {
   image: ProjectImage;
 };
 
-type CertItem = { label: string; href: string };
+type CertItem = {
+  label: string;
+  issuer: string;
+  date: string;
+  credential: string;
+  href: string;
+};
 
 type ContactItem = {
   icon: ContactIcon;
@@ -75,7 +81,12 @@ export type Content = {
     bullets: string[];
     imageAlts: string[];
   };
-  certificates: { eyebrow: string; title: string; items: CertItem[] };
+  certificates: {
+    eyebrow: string;
+    title: string;
+    open: string;
+    items: CertItem[];
+  };
   cv: { eyebrow: string; title: string; desc: string; cta: string };
   services: {
     eyebrow: string;
@@ -270,22 +281,42 @@ const en: Content = {
   certificates: {
     eyebrow: "05 — Certificates",
     title: "Certificates",
+    open: "Open PDF →",
     items: [
       {
-        label: "CTF CADIAK 2026 Certificate (PDF)",
+        label: "Linux Fundamental",
+        issuer: "Aguna Course",
+        date: "15 November 2026",
+        credential: "AC-764-02199978-28",
+        href: "/certificates/sertifikat-linux-fundamental.pdf",
+      },
+      {
+        label: "Python Fundamental",
+        issuer: "Aguna Course",
+        date: "6 October 2026",
+        credential: "AC-971-95760181-67",
+        href: "/certificates/sertifikat-python-fundamental.pdf",
+      },
+      {
+        label: "CTF CADIAK 2026 — Cyber Attack & Defense",
+        issuer: "Diskominfotik Sumatera Barat",
+        date: "30 September 2026",
+        credential: "SS/SERT/009-2026",
         href: "/certificates/sertifikat-cadiak-ctf.pdf",
       },
       {
-        label: "English Learner Certificate (PDF)",
-        href: "/certificates/sertifikat-english-learner-2.pdf",
-      },
-      {
-        label: "Network Fundamental Certificate (PDF)",
+        label: "Network Fundamental",
+        issuer: "Aguna Course",
+        date: "27 January 2026",
+        credential: "AC-600-77053855-41",
         href: "/certificates/sertifikat-network-fundamental.pdf",
       },
       {
-        label: "Python Fundamental Certificate (PDF)",
-        href: "/certificates/sertifikat-python-fundamental.pdf",
+        label: "Certified English Learner",
+        issuer: "Karya Inspirasi Indonesia",
+        date: "2025",
+        credential: "077/SEI/KII/CEL/III/2025",
+        href: "/certificates/sertifikat-english-learner-2.pdf",
       },
     ],
   },
@@ -530,22 +561,42 @@ const id: Content = {
   certificates: {
     eyebrow: "05 — Sertifikat",
     title: "Sertifikat",
+    open: "Buka PDF →",
     items: [
       {
-        label: "Sertifikat CTF CADIAK 2026 (PDF)",
+        label: "Linux Fundamental",
+        issuer: "Aguna Course",
+        date: "15 November 2026",
+        credential: "AC-764-02199978-28",
+        href: "/certificates/sertifikat-linux-fundamental.pdf",
+      },
+      {
+        label: "Python Fundamental",
+        issuer: "Aguna Course",
+        date: "6 Oktober 2026",
+        credential: "AC-971-95760181-67",
+        href: "/certificates/sertifikat-python-fundamental.pdf",
+      },
+      {
+        label: "CTF CADIAK 2026 — Cyber Attack & Defense",
+        issuer: "Diskominfotik Sumatera Barat",
+        date: "30 September 2026",
+        credential: "SS/SERT/009-2026",
         href: "/certificates/sertifikat-cadiak-ctf.pdf",
       },
       {
-        label: "Sertifikat English Learner (PDF)",
-        href: "/certificates/sertifikat-english-learner-2.pdf",
-      },
-      {
-        label: "Sertifikat Network Fundamental (PDF)",
+        label: "Network Fundamental",
+        issuer: "Aguna Course",
+        date: "27 Januari 2026",
+        credential: "AC-600-77053855-41",
         href: "/certificates/sertifikat-network-fundamental.pdf",
       },
       {
-        label: "Sertifikat Python Fundamental (PDF)",
-        href: "/certificates/sertifikat-python-fundamental.pdf",
+        label: "Certified English Learner",
+        issuer: "Karya Inspirasi Indonesia",
+        date: "2025",
+        credential: "077/SEI/KII/CEL/III/2025",
+        href: "/certificates/sertifikat-english-learner-2.pdf",
       },
     ],
   },

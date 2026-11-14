@@ -391,9 +391,18 @@ export function PortfolioPage({
                 href={cert.href}
                 target="_blank"
                 rel="noopener"
-                className="card p-6"
+                className="card p-6 flex flex-col"
               >
-                {cert.label}
+                <span className="font-semibold leading-snug">{cert.label}</span>
+                <span className="mono text-xs text-muted mt-1">
+                  {cert.issuer} · {cert.date}
+                </span>
+                <span className="mono text-[11px] text-white/35 mt-1">
+                  ID: {cert.credential}
+                </span>
+                <span className="mt-auto pt-4 text-sm text-muted">
+                  {content.certificates.open}
+                </span>
               </a>
             ))}
           </div>
