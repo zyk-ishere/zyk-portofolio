@@ -346,36 +346,24 @@ export function PortfolioPage({
               ))}
             </ul>
             <div className="grid grid-cols-2 gap-4 mt-4">
-              <a
-                href="/gallery/kopi-ajoe-1.webp"
-                target="_blank"
-                rel="noopener"
-                className="card overflow-hidden block"
-              >
-                <Image
-                  src="/gallery/kopi-ajoe-1.webp"
-                  alt={content.security.imageAlts[0]}
-                  width={720}
-                  height={1548}
-                  sizes="(min-width: 768px) 480px, 45vw"
-                  className="w-full h-40 object-cover"
-                />
-              </a>
-              <a
-                href="/gallery/kopi-ajoe-2.webp"
-                target="_blank"
-                rel="noopener"
-                className="card overflow-hidden block"
-              >
-                <Image
-                  src="/gallery/kopi-ajoe-2.webp"
-                  alt={content.security.imageAlts[1]}
-                  width={716}
-                  height={1544}
-                  sizes="(min-width: 768px) 480px, 45vw"
-                  className="w-full h-40 object-cover"
-                />
-              </a>
+              {content.security.imageAlts.map((alt, i) => (
+                <a
+                  key={alt}
+                  href={`/gallery/kopi-ajoe-${i + 1}.webp`}
+                  target="_blank"
+                  rel="noopener"
+                  className="card overflow-hidden block"
+                >
+                  <Image
+                    src={`/gallery/kopi-ajoe-${i + 1}.webp`}
+                    alt={alt}
+                    width={720}
+                    height={1400}
+                    sizes="(min-width: 768px) 480px, 45vw"
+                    className="w-full h-40 object-cover"
+                  />
+                </a>
+              ))}
             </div>
           </article>
         </div>

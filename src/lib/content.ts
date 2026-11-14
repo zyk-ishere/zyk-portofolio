@@ -276,6 +276,8 @@ const en: Content = {
     imageAlts: [
       "Kopi Ajoe defacement evidence 1",
       "Kopi Ajoe defacement evidence 2",
+      "Kopi Ajoe authorized chat evidence 1",
+      "Kopi Ajoe authorized chat evidence 2",
     ],
   },
   certificates: {
@@ -584,7 +586,12 @@ const id: Content = {
       "Melakukan deface pada foto produk di dalam aplikasi.",
       "Seluruh temuan dilaporkan ke tim cybersecurity Kopi Ajoe untuk diperbaiki.",
     ],
-    imageAlts: ["Bukti deface Kopi Ajoe 1", "Bukti deface Kopi Ajoe 2"],
+    imageAlts: [
+      "Bukti deface Kopi Ajoe 1",
+      "Bukti deface Kopi Ajoe 2",
+      "Bukti chat dengan tim Kopi Ajoe 1",
+      "Bukti chat dengan tim Kopi Ajoe 2",
+    ],
   },
   certificates: {
     eyebrow: "05 — Sertifikat",
