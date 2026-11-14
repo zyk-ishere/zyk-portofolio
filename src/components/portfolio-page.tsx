@@ -63,11 +63,8 @@ export function PortfolioPage({
 
       {/* NAV */}
       <nav className="fixed top-0 inset-x-0 z-50 nav-glass">
-        <div className="container relative flex items-center justify-end md:justify-between h-16">
-          <a
-            href="#home"
-            className="mono font-semibold absolute left-1/2 -translate-x-1/2 md:static md:translate-x-0"
-          >
+        <div className="container flex items-center justify-between h-16">
+          <a href="#home" className="mono font-semibold ml-8 md:ml-0">
             taufik<span className="text-muted">.</span>zaqi
           </a>
 
