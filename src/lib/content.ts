@@ -130,7 +130,7 @@ const en: Content = {
   about: {
     eyebrow: "01 — About",
     title: "About Me",
-    body: "I am a Full Stack Web Developer and Ethical Hacker. I build web applications end-to-end — from frontend to backend — and perform ethical security testing to find and fix vulnerabilities.",
+    body: "I am a Full Stack Web Developer, and I am still a beginner in ethical hacking. I build web applications end-to-end — from frontend to backend — and I am learning security testing to find and fix vulnerabilities.",
     photoAlt: "Photo of Taufik Zaqi",
     facts: [
       { label: "Role", value: "Full Stack Web Developer" },
@@ -147,7 +147,7 @@ const en: Content = {
       "React / Next.js",
       "Node.js",
       "TypeScript",
-      "Ethical Hacking",
+      "Ethical Hacking (beginner)",
       "Web App Security",
       "Networking",
       "Linux (parrot os, debian 12)",
@@ -349,7 +349,7 @@ const id: Content = {
   about: {
     eyebrow: "01 — Tentang",
     title: "Tentang Saya",
-    body: "Saya seorang Full Stack Web Developer dan Ethical Hacker. Saya membangun aplikasi web dari awal sampai akhir — mulai dari frontend hingga backend — serta melakukan pengujian keamanan etis untuk menemukan dan memperbaiki celah keamanan.",
+    body: "Saya seorang Full Stack Web Developer, dan saya masih pemula di bidang ethical hacking. Saya membangun aplikasi web dari awal sampai akhir — mulai dari frontend hingga backend — serta sedang belajar pengujian keamanan untuk menemukan dan memperbaiki celah keamanan.",
     photoAlt: "Foto Taufik Zaqi",
     facts: [
       { label: "Peran", value: "Full Stack Web Developer" },
@@ -366,7 +366,7 @@ const id: Content = {
       "React / Next.js",
       "Node.js",
       "TypeScript",
-      "Ethical Hacking",
+      "Ethical Hacking (pemula)",
       "Keamanan Web App",
       "Jaringan",
       "Linux (parrot os, debian 12)",
