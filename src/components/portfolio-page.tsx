@@ -365,6 +365,14 @@ export function PortfolioPage({
                 </a>
               ))}
             </div>
+            <div className="mt-6 pt-4 border-t border-line">
+              <p className="mono text-xs text-muted mb-2 uppercase tracking-wider">
+                {content.security.outcomeTitle}
+              </p>
+              <p className="text-muted leading-relaxed text-sm">
+                {content.security.outcome}
+              </p>
+            </div>
           </article>
         </div>
       </section>
