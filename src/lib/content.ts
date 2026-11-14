@@ -291,6 +291,13 @@ const en: Content = {
         href: "/certificates/sertifikat-cadiak-ctf.pdf",
       },
       {
+        label: "Memulai Pemrograman Dengan Java",
+        issuer: "Dicoding Indonesia",
+        date: "15 November 2026",
+        credential: "1RXYDE0J3XVM",
+        href: "/certificates/sertifikat-java-dicoding.pdf",
+      },
+      {
         label: "Linux Fundamental",
         issuer: "Aguna Course",
         date: "15 November 2026",
@@ -576,6 +583,13 @@ const id: Content = {
         date: "30 September 2026",
         credential: "SS/SERT/009-2026",
         href: "/certificates/sertifikat-cadiak-ctf.pdf",
+      },
+      {
+        label: "Memulai Pemrograman Dengan Java",
+        issuer: "Dicoding Indonesia",
+        date: "15 November 2026",
+        credential: "1RXYDE0J3XVM",
+        href: "/certificates/sertifikat-java-dicoding.pdf",
       },
       {
         label: "Linux Fundamental",
