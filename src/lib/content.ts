@@ -156,7 +156,7 @@ const en: Content = {
   about: {
     eyebrow: "01 — About",
     title: "About Me",
-    body: "I am a Full Stack Web Developer focused on building web applications from frontend to backend. I am also deepening my knowledge in Cybersecurity and Ethical Hacking, especially web application security testing to identify and fix potential vulnerabilities.\\n\\nAs a Vibe Coder, I leverage AI technology to speed up development — turning ideas into functional, ready-to-use digital products.",
+    body: "I am a Full Stack Web Developer focused on building web applications from frontend to backend. I am also deepening my knowledge in Cybersecurity and Ethical Hacking, especially web application security testing to identify and fix potential vulnerabilities.\n\nAs a Vibe Coder, I leverage AI technology to speed up development — turning ideas into functional, ready-to-use digital products.",
     photoAlt: "Photo of Taufik Zaqi",
     facts: [
       { label: "Role", value: "Full Stack Web Developer & Vibe Coder" },
@@ -467,7 +467,7 @@ const id: Content = {
   about: {
     eyebrow: "01 — Tentang",
     title: "Tentang Saya",
-    body: "Saya adalah Full Stack Web Developer yang berfokus pada pengembangan aplikasi web dari frontend hingga backend. Saya juga sedang mendalami bidang Cybersecurity dan Ethical Hacking, khususnya pengujian keamanan aplikasi web untuk mengidentifikasi serta memperbaiki potensi kerentanan.\\n\\nSebagai seorang Vibe Coder, saya memanfaatkan teknologi AI untuk mempercepat proses pengembangan, mengubah ide menjadi produk digital yang fungsional dan siap digunakan.",
+    body: "Saya adalah Full Stack Web Developer yang berfokus pada pengembangan aplikasi web dari frontend hingga backend. Saya juga sedang mendalami bidang Cybersecurity dan Ethical Hacking, khususnya pengujian keamanan aplikasi web untuk mengidentifikasi serta memperbaiki potensi kerentanan.\n\nSebagai seorang Vibe Coder, saya memanfaatkan teknologi AI untuk mempercepat proses pengembangan, mengubah ide menjadi produk digital yang fungsional dan siap digunakan.",
     photoAlt: "Foto Taufik Zaqi",
     facts: [
       { label: "Peran", value: "Full Stack Web Developer & Vibe Coder" },
