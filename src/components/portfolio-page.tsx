@@ -274,8 +274,21 @@ export function PortfolioPage({
                   />
                 </a>
                 <h3 className="text-xl font-semibold">{project.title}</h3>
-                <p className="text-muted mt-2 flex-1">{project.desc}</p>
-                <div className="flex flex-wrap gap-2 mt-4">
+                <p className="mono text-xs text-muted mt-1 mb-3">
+                  {project.meta.role} · {project.meta.status}
+                </p>
+                <p className="text-muted">{project.desc}</p>
+                <ul className="mt-4 space-y-2 text-sm text-muted">
+                  {project.features.map((feature) => (
+                    <li key={feature} className="flex gap-2">
+                      <span aria-hidden="true" className="text-white/35">
+                        ›
+                      </span>
+                      <span>{feature}</span>
+                    </li>
+                  ))}
+                </ul>
+                <div className="flex flex-wrap gap-2 mt-auto pt-5">
                   {project.tags.map((tag) => (
                     <span
                       key={tag}

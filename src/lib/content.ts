@@ -15,6 +15,8 @@ type ProjectImage = { src: string; width: number; height: number };
 type ProjectItem = {
   title: string;
   desc: string;
+  features: string[];
+  meta: { role: string; status: string };
   tags: string[];
   link: string;
   image: ProjectImage;
@@ -181,35 +183,65 @@ const en: Content = {
     items: [
       {
         title: "Devzy — Web Development Services",
-        desc: "Website service site for Devzy: landing pages, company profiles, e-commerce, and custom web apps. Includes packages, pricing, portfolio, blog, and WhatsApp consultation.",
+        desc: "Independent web studio site for Devzy. Sells websites to UMKM and local businesses with transparent one-time pricing — landing pages, company profiles, e-commerce, and custom web apps — plus a portfolio, live demos, blog, and WhatsApp-first consultation.",
+        features: [
+          "Service pages, pricing table & package comparison",
+          "Portfolio with case studies + 10 live demo sites",
+          "Blog, FAQ, and WhatsApp consultation flow",
+        ],
+        meta: { role: "Founder & Developer", status: "Live" },
         tags: ["Next.js", "Tailwind CSS", "Services"],
         link: "https://devzy.site",
         image: { src: "/img/projects/devzy.webp", width: 1200, height: 630 },
       },
       {
         title: "Kostin — Boarding House Management",
-        desc: "Boarding house payment and billing system: room & tenant data, monthly invoices, proof-of-transfer verification. PWA.",
+        desc: "Boarding-house management PWA. Owners manage rooms, tenants, and monthly invoices in one dashboard, while tenants upload proof of transfer for verification — installable on a phone so it feels like a native app.",
+        features: [
+          "Room & tenant database",
+          "Monthly billing + transfer verification",
+          "Installable PWA with offline app shell",
+        ],
+        meta: { role: "Full Stack Developer", status: "Live" },
         tags: ["Next.js", "PWA", "Supabase"],
         link: "https://www.konstin.my.id/",
         image: { src: "/img/projects/konstin.webp", width: 1280, height: 900 },
       },
       {
         title: "Duidi",
-        desc: "Personal finance and financial planning app. Track income/expenses, manage budgets.",
+        desc: "Personal finance and planning app. Users record income and expenses, set budgets, and read monthly summaries; new users can try the full app free for 14 days before choosing a plan.",
+        features: [
+          "Income & expense tracking",
+          "Budget planning and monthly insights",
+          "14-day free trial with tiered pricing",
+        ],
+        meta: { role: "Full Stack Developer", status: "Live" },
         tags: ["Next.js", "PWA", "Finance"],
         link: "https://www.duidi.web.id/",
         image: { src: "/img/projects/duidi.webp", width: 1280, height: 900 },
       },
       {
         title: "Zykk Store",
-        desc: "Social media booster service (SMM provider): increase followers, likes, and reposts instantly. Fast, safe, competitive pricing.",
+        desc: "Social media booster service (SMM provider). A tiered price list covers Instagram, TikTok, and WhatsApp Channel — followers, likes, and reposts — with orders handled directly through WhatsApp and public transaction testimonials.",
+        features: [
+          "Instagram, TikTok & WA Channel packages",
+          "Tiered pricing per quantity",
+          "Public testimonials + WhatsApp ordering",
+        ],
+        meta: { role: "Frontend Developer", status: "Live" },
         tags: ["HTML", "CSS", "JavaScript"],
         link: "https://zykk-store.netlify.app/",
         image: { src: "/img/projects/zykk-store.webp", width: 1280, height: 900 },
       },
       {
         title: "ZYK — Personal Link Hub",
-        desc: "Personal link-in-bio page with dark glassmorphism. Unifies Instagram, WhatsApp, and Discord in one link, responsive, deployed on Netlify.",
+        desc: "Personal link-in-bio hub in a dark glassmorphism style. One short link connects Instagram, WhatsApp, and Discord with a live status line, built as a lightweight mobile-first static page.",
+        features: [
+          "One link for every social profile",
+          "Dark glass UI, mobile-first",
+          "Static and fast, deployed on Netlify",
+        ],
+        meta: { role: "Designer & Developer", status: "Live" },
         tags: ["HTML", "CSS", "Bootstrap"],
         link: "https://zyks.netlify.app/",
         image: { src: "/img/projects/zyks.webp", width: 1600, height: 1000 },
@@ -414,35 +446,65 @@ const id: Content = {
     items: [
       {
         title: "Devzy — Jasa Pembuatan Website",
-        desc: "Website layanan Devzy: landing page, company profile, e-commerce, hingga web app custom. Dilengkapi paket harga, portofolio, blog, dan konsultasi via WhatsApp.",
+        desc: "Situs studio web independen Devzy. Menjual jasa pembuatan website untuk UMKM dan bisnis lokal dengan harga sekali bayar yang transparan — landing page, company profile, e-commerce, hingga web app custom — lengkap dengan portofolio, demo langsung, blog, dan konsultasi via WhatsApp.",
+        features: [
+          "Halaman layanan, tabel harga & perbandingan paket",
+          "Portofolio dengan studi kasus + 10 demo situs",
+          "Blog, FAQ, dan alur konsultasi via WhatsApp",
+        ],
+        meta: { role: "Founder & Developer", status: "Aktif" },
         tags: ["Next.js", "Tailwind CSS", "Layanan"],
         link: "https://devzy.site",
         image: { src: "/img/projects/devzy.webp", width: 1200, height: 630 },
       },
       {
         title: "Kostin — Manajemen Kos",
-        desc: "Sistem pembayaran dan tagihan kos: data kamar & penghuni, tagihan bulanan, serta verifikasi bukti transfer. PWA.",
+        desc: "PWA manajemen kos. Pemilik mengelola kamar, penghuni, dan tagihan bulanan dalam satu dashboard, sementara penghuni mengunggah bukti transfer untuk diverifikasi — bisa dipasang di HP sehingga terasa seperti aplikasi native.",
+        features: [
+          "Database kamar & penghuni",
+          "Tagihan bulanan + verifikasi bukti transfer",
+          "PWA yang bisa di-install di HP/desktop",
+        ],
+        meta: { role: "Full Stack Developer", status: "Aktif" },
         tags: ["Next.js", "PWA", "Supabase"],
         link: "https://www.konstin.my.id/",
         image: { src: "/img/projects/konstin.webp", width: 1280, height: 900 },
       },
       {
         title: "Duidi",
-        desc: "Aplikasi keuangan dan perencanaan finansial pribadi. Catat pemasukan/pengeluaran dan kelola anggaran.",
+        desc: "Aplikasi keuangan dan perencanaan finansial pribadi. Pengguna mencatat pemasukan dan pengeluaran, menyusun anggaran, lalu membaca ringkasan bulanan; pengguna baru bisa mencoba seluruh fitur gratis 14 hari sebelum memilih paket.",
+        features: [
+          "Pencatatan pemasukan & pengeluaran",
+          "Perencanaan anggaran dan ringkasan bulanan",
+          "Uji coba gratis 14 hari dengan paket berbayar",
+        ],
+        meta: { role: "Full Stack Developer", status: "Aktif" },
         tags: ["Next.js", "PWA", "Keuangan"],
         link: "https://www.duidi.web.id/",
         image: { src: "/img/projects/duidi.webp", width: 1280, height: 900 },
       },
       {
         title: "Zykk Store",
-        desc: "Layanan penambah engagement media sosial (SMM provider): menambah followers, likes, dan repost secara instan. Cepat, aman, harga bersaing.",
+        desc: "Layanan penambah engagement media sosial (SMM provider). Price list bertingkat mencakup Instagram, TikTok, dan WhatsApp Channel — followers, likes, dan repost — dengan pemesanan langsung lewat WhatsApp dan testimoni transaksi yang terbuka.",
+        features: [
+          "Paket Instagram, TikTok & WhatsApp Channel",
+          "Harga bertingkat sesuai jumlah",
+          "Testimoni publik + order via WhatsApp",
+        ],
+        meta: { role: "Frontend Developer", status: "Aktif" },
         tags: ["HTML", "CSS", "JavaScript"],
         link: "https://zykk-store.netlify.app/",
         image: { src: "/img/projects/zykk-store.webp", width: 1280, height: 900 },
       },
       {
         title: "ZYK — Link Hub Pribadi",
-        desc: "Halaman link-in-bio pribadi dengan gaya dark glassmorphism. Menyatukan Instagram, WhatsApp, dan Discord dalam satu tautan, responsif, di-deploy di Netlify.",
+        desc: "Link hub pribadi bergaya dark glassmorphism. Satu tautan pendek menghubungkan Instagram, WhatsApp, dan Discord lengkap dengan status live, dibangun sebagai halaman statis ringan yang mobile-first.",
+        features: [
+          "Satu tautan untuk semua sosial media",
+          "UI dark glass, mobile-first",
+          "Statis dan cepat, deploy di Netlify",
+        ],
+        meta: { role: "Designer & Developer", status: "Aktif" },
         tags: ["HTML", "CSS", "Bootstrap"],
         link: "https://zyks.netlify.app/",
         image: { src: "/img/projects/zyks.webp", width: 1600, height: 1000 },
