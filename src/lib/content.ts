@@ -284,6 +284,13 @@ const en: Content = {
     open: "Open PDF →",
     items: [
       {
+        label: "CTF CADIAK 2026 — Cyber Attack & Defense",
+        issuer: "Diskominfotik Sumatera Barat",
+        date: "30 September 2026",
+        credential: "SS/SERT/009-2026",
+        href: "/certificates/sertifikat-cadiak-ctf.pdf",
+      },
+      {
         label: "Linux Fundamental",
         issuer: "Aguna Course",
         date: "15 November 2026",
@@ -303,13 +310,6 @@ const en: Content = {
         date: "6 October 2026",
         credential: "AC-971-95760181-67",
         href: "/certificates/sertifikat-python-fundamental.pdf",
-      },
-      {
-        label: "CTF CADIAK 2026 — Cyber Attack & Defense",
-        issuer: "Diskominfotik Sumatera Barat",
-        date: "30 September 2026",
-        credential: "SS/SERT/009-2026",
-        href: "/certificates/sertifikat-cadiak-ctf.pdf",
       },
       {
         label: "Network Fundamental",
@@ -571,6 +571,13 @@ const id: Content = {
     open: "Buka PDF →",
     items: [
       {
+        label: "CTF CADIAK 2026 — Cyber Attack & Defense",
+        issuer: "Diskominfotik Sumatera Barat",
+        date: "30 September 2026",
+        credential: "SS/SERT/009-2026",
+        href: "/certificates/sertifikat-cadiak-ctf.pdf",
+      },
+      {
         label: "Linux Fundamental",
         issuer: "Aguna Course",
         date: "15 November 2026",
@@ -590,13 +597,6 @@ const id: Content = {
         date: "6 Oktober 2026",
         credential: "AC-971-95760181-67",
         href: "/certificates/sertifikat-python-fundamental.pdf",
-      },
-      {
-        label: "CTF CADIAK 2026 — Cyber Attack & Defense",
-        issuer: "Diskominfotik Sumatera Barat",
-        date: "30 September 2026",
-        credential: "SS/SERT/009-2026",
-        href: "/certificates/sertifikat-cadiak-ctf.pdf",
       },
       {
         label: "Network Fundamental",
