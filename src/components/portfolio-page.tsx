@@ -60,7 +60,7 @@ export function PortfolioPage({
       <RevealObserver />
 
       {/* NAV */}
-      <nav className="fixed top-0 inset-x-0 z-50 border-b border-line bg-background/80 backdrop-blur">
+      <nav className="fixed top-0 inset-x-0 z-50 nav-glass">
         <div className="container flex items-center justify-between h-16">
           <a href="#home" className="mono font-semibold">
             taufik<span className="text-muted">.</span>zaqi
@@ -193,7 +193,7 @@ export function PortfolioPage({
             {content.skills.items.map((skill, i) => (
               <span
                 key={skill}
-                className="mono text-sm px-4 py-2 rounded-lg border border-line bg-card mono-tag reveal"
+                className="mono text-sm px-4 py-2 rounded-lg chip mono-tag reveal"
                 style={{ transitionDelay: `${i * 50}ms` }}
               >
                 {skill}
@@ -225,7 +225,7 @@ export function PortfolioPage({
                   {project.tags.map((tag) => (
                     <span
                       key={tag}
-                      className="mono text-xs px-2 py-1 rounded border border-line"
+                      className="mono text-xs px-2 py-1 rounded chip"
                     >
                       {tag}
                     </span>
@@ -259,7 +259,7 @@ export function PortfolioPage({
               {content.security.badges.map((badge) => (
                 <span
                   key={badge}
-                  className="mono text-xs px-2 py-1 rounded border border-line"
+                  className="mono text-xs px-2 py-1 rounded chip"
                 >
                   {badge}
                 </span>
@@ -320,7 +320,7 @@ export function PortfolioPage({
                 href={cert.href}
                 target="_blank"
                 rel="noopener"
-                className="card p-6 hover:bg-card/80 transition"
+                className="card p-6"
               >
                 {cert.label}
               </a>
@@ -407,7 +407,7 @@ export function PortfolioPage({
                 {...(item.external
                   ? { target: "_blank", rel: "noopener" }
                   : {})}
-                className="card p-6 hover:bg-card/80 transition flex items-center gap-4"
+                className="card p-6 flex items-center gap-4"
               >
                 {contactIcons[item.icon]}
                 <div>
