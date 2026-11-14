@@ -266,8 +266,7 @@ const en: Content = {
     title: "Security Research",
     badges: ["Bug Hunting", "Web Security", "Authorized"],
     heading: "Kopi Ajoe — Authorized Security Assessment",
-    intro:
-      "Authorized security assessment on the Kopi Ajoe application (with owner permission). Findings include:",
+    intro: "",
     bullets: [
       "Accessed the super admin panel of admin.kopiajoe.com.",
       "Identified a Row Level Security (RLS) misconfiguration allowing unauthorized data access.",
@@ -582,8 +581,7 @@ const id: Content = {
     title: "Riset Keamanan",
     badges: ["Bug Hunting", "Keamanan Web", "Terotorisasi"],
     heading: "Kopi Ajoe — Penilaian Keamanan Terotorisasi",
-    intro:
-      "Penilaian keamanan terotorisasi pada aplikasi Kopi Ajoe (dengan izin pemilik). Temuan meliputi:",
+    intro: "",
     bullets: [
       "Berhasil mengakses panel super admin admin.kopiajoe.com.",
       "Menemukan kesalahan konfigurasi Row Level Security (RLS) yang memungkinkan akses data tanpa otorisasi.",

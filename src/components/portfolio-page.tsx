@@ -339,7 +339,9 @@ export function PortfolioPage({
               ))}
             </div>
             <h3 className="text-xl font-semibold">{content.security.heading}</h3>
-            <p className="text-muted mt-2">{content.security.intro}</p>
+            {content.security.intro && (
+              <p className="text-muted mt-2">{content.security.intro}</p>
+            )}
             <ul className="text-muted mt-2 space-y-1 list-disc list-inside text-sm">
               {content.security.bullets.map((bullet) => (
                 <li key={bullet}>{bullet}</li>
