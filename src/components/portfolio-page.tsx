@@ -170,7 +170,13 @@ export function PortfolioPage({
               />
             </div>
             <div className="space-y-4">
-              <p className="text-muted leading-relaxed">{content.about.body}</p>
+              <div className="space-y-4">
+                {content.about.body.split(/\n\s*\n/).map((paragraph, i) => (
+                  <p key={i} className="text-muted leading-relaxed">
+                    {paragraph}
+                  </p>
+                ))}
+              </div>
               <div className="card p-6">
                 <ul className="space-y-2 text-sm">
                   {content.about.facts.map((fact) => (

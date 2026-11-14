@@ -156,13 +156,13 @@ const en: Content = {
   about: {
     eyebrow: "01 — About",
     title: "About Me",
-    body: "I am a Full Stack Web Developer, and I am still a beginner in ethical hacking. I build web applications end-to-end — from frontend to backend — and I am learning security testing to find and fix vulnerabilities. I also work as a vibe coder — turning ideas into working products quickly with AI-assisted workflows.",
+    body: "I am a Full Stack Web Developer focused on building web applications from frontend to backend. I am also deepening my knowledge in Cybersecurity and Ethical Hacking, especially web application security testing to identify and fix potential vulnerabilities.\\n\\nAs a Vibe Coder, I leverage AI technology to speed up development — turning ideas into functional, ready-to-use digital products.",
     photoAlt: "Photo of Taufik Zaqi",
     facts: [
       { label: "Role", value: "Full Stack Web Developer & Vibe Coder" },
-      { label: "Field", value: "Grey Hat" },
+      { label: "Field", value: "Web Development & Cybersecurity" },
       { label: "Location", value: "Payakumbuh, West Sumatra" },
-      { label: "Focus", value: "Web Apps, Security, Networking" },
+      { label: "Focus", value: "Web Application, Application Security & Networking" },
     ],
     education: {
       label: "Education",
@@ -467,13 +467,13 @@ const id: Content = {
   about: {
     eyebrow: "01 — Tentang",
     title: "Tentang Saya",
-    body: "Saya seorang Full Stack Web Developer, dan saya masih pemula di bidang ethical hacking. Saya membangun aplikasi web dari awal sampai akhir — mulai dari frontend hingga backend — serta sedang belajar pengujian keamanan untuk menemukan dan memperbaiki celah keamanan. Saya juga seorang vibe coder — mengubah ide menjadi produk yang jalan dengan cepat lewat alur kerja berbantuan AI.",
+    body: "Saya adalah Full Stack Web Developer yang berfokus pada pengembangan aplikasi web dari frontend hingga backend. Saya juga sedang mendalami bidang Cybersecurity dan Ethical Hacking, khususnya pengujian keamanan aplikasi web untuk mengidentifikasi serta memperbaiki potensi kerentanan.\\n\\nSebagai seorang Vibe Coder, saya memanfaatkan teknologi AI untuk mempercepat proses pengembangan, mengubah ide menjadi produk digital yang fungsional dan siap digunakan.",
     photoAlt: "Foto Taufik Zaqi",
     facts: [
       { label: "Peran", value: "Full Stack Web Developer & Vibe Coder" },
-      { label: "Bidang", value: "Grey Hat" },
+      { label: "Bidang", value: "Web Development & Cybersecurity" },
       { label: "Lokasi", value: "Payakumbuh, Sumatera Barat" },
-      { label: "Fokus", value: "Web App, Keamanan, Jaringan" },
+      { label: "Fokus", value: "Web Application, Application Security & Networking" },
     ],
     education: {
       label: "Pendidikan",
