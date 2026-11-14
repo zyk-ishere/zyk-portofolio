@@ -504,7 +504,7 @@ export function PortfolioPage({
         </div>
       </section>
 
-      <footer className="border-t border-line py-8">
+      <footer className="border-t border-line py-8 px-6">
         <div className="container">
           <div className="flex flex-col items-start justify-between gap-4 pb-8 mb-8 border-b border-line sm:flex-row sm:items-center">
             <div>
