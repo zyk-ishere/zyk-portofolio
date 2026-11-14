@@ -72,7 +72,7 @@ export function MobileNav({
       {open && (
         <div
           id="mobile-menu"
-          className="card fixed right-4 top-[4.25rem] z-50 w-56 max-w-[calc(100vw-2rem)] p-2"
+          className="card fixed right-4 top-[4.75rem] z-50 w-56 max-w-[calc(100vw-2rem)] p-2"
         >
           {items.map((item) => (
             <a
