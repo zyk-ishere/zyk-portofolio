@@ -234,6 +234,19 @@ const en: Content = {
         image: { src: "/img/projects/duidi.webp", width: 1280, height: 900 },
       },
       {
+        title: "Barbook — Barbershop Booking",
+        desc: "Online barbershop booking PWA. Customers can browse barbershops and book appointments without logging in, while owners manage schedules, services, barbers, bookings, and income from one dashboard — installable on any device.",
+        features: [
+          "No-login booking: pick barbershop, service, barber & time slot",
+          "Live barber status, today's queue, and Google Maps location",
+          "Owner dashboard for schedules, bookings, income & shareable link",
+        ],
+        meta: { role: "Full Stack Developer", status: "Live" },
+        tags: ["Next.js", "PWA", "Supabase"],
+        link: "https://barbook.web.id",
+        image: { src: "/img/projects/barbook.webp", width: 1280, height: 900 },
+      },
+      {
         title: "Zykk Store",
         desc: "Social media booster service (SMM provider). A tiered price list covers Instagram, TikTok, and WhatsApp Channel — followers, likes, and reposts — with orders handled directly through WhatsApp and public transaction testimonials.",
         features: [
@@ -547,6 +560,19 @@ const id: Content = {
         tags: ["Next.js", "PWA", "Keuangan"],
         link: "https://www.duidi.web.id/",
         image: { src: "/img/projects/duidi.webp", width: 1280, height: 900 },
+      },
+      {
+        title: "Barbook — Booking Barbershop",
+        desc: "PWA booking barbershop online. Pelanggan bisa memilih barbershop dan memesan jadwal cukur tanpa login, sementara pemilik mengelola jadwal, layanan, kapster, booking, dan pemasukan dalam satu dashboard — bisa di-install di perangkat.",
+        features: [
+          "Booking tanpa login: pilih barbershop, layanan, kapster & jam",
+          "Status kapster, daftar booking hari ini, dan lokasi Google Maps",
+          "Dashboard pemilik: jadwal, booking, pemasukan & link booking",
+        ],
+        meta: { role: "Full Stack Developer", status: "Aktif" },
+        tags: ["Next.js", "PWA", "Supabase"],
+        link: "https://barbook.web.id",
+        image: { src: "/img/projects/barbook.webp", width: 1280, height: 900 },
       },
       {
         title: "Zykk Store",
