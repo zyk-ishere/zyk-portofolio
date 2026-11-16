@@ -248,13 +248,13 @@ const en: Content = {
       },
       {
         title: "Zykk Store",
-        desc: "Social media booster service (SMM provider). A tiered price list covers Instagram, TikTok, and WhatsApp Channel — followers, likes, and reposts — with orders handled directly through WhatsApp and public transaction testimonials.",
+        desc: "Social media booster service (SMM provider) catalog site. It listed tiered packages for Instagram, TikTok, and WhatsApp Channel — followers, likes, and reposts — with WhatsApp ordering and public testimonials. The site is still live but no longer selling.",
         features: [
           "Instagram, TikTok & WA Channel packages",
           "Tiered pricing per quantity",
           "Public testimonials + WhatsApp ordering",
         ],
-        meta: { role: "Frontend Developer", status: "Live" },
+        meta: { role: "Frontend Developer", status: "No longer selling" },
         tags: ["HTML", "CSS", "JavaScript"],
         link: "https://zykk-store.netlify.app/",
         image: { src: "/img/projects/zykk-store.webp", width: 1280, height: 900 },
@@ -576,13 +576,13 @@ const id: Content = {
       },
       {
         title: "Zykk Store",
-        desc: "Layanan penambah engagement media sosial (SMM provider). Price list bertingkat mencakup Instagram, TikTok, dan WhatsApp Channel — followers, likes, dan repost — dengan pemesanan langsung lewat WhatsApp dan testimoni transaksi yang terbuka.",
+        desc: "Situs katalog layanan penambah engagement media sosial (SMM provider). Menampilkan paket bertingkat untuk Instagram, TikTok, dan WhatsApp Channel — followers, likes, dan repost — dengan pemesanan via WhatsApp dan testimoni transaksi publik. Situs masih aktif, namun sudah tidak berjualan.",
         features: [
           "Paket Instagram, TikTok & WhatsApp Channel",
           "Harga bertingkat sesuai jumlah",
           "Testimoni publik + order via WhatsApp",
         ],
-        meta: { role: "Frontend Developer", status: "Aktif" },
+        meta: { role: "Frontend Developer", status: "Tidak lagi berjualan" },
         tags: ["HTML", "CSS", "JavaScript"],
         link: "https://zykk-store.netlify.app/",
         image: { src: "/img/projects/zykk-store.webp", width: 1280, height: 900 },
