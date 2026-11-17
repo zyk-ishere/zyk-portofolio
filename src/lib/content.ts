@@ -244,7 +244,7 @@ const en: Content = {
         meta: { role: "Full Stack Developer", status: "Live" },
         tags: ["Next.js", "PWA", "Supabase"],
         link: "https://barbook.web.id",
-        image: { src: "/img/projects/barbook.webp", width: 1280, height: 900 },
+        image: { src: "/img/projects/barbook.webp", width: 1266, height: 863 },
       },
       {
         title: "Zykk Store",
@@ -572,7 +572,7 @@ const id: Content = {
         meta: { role: "Full Stack Developer", status: "Aktif" },
         tags: ["Next.js", "PWA", "Supabase"],
         link: "https://barbook.web.id",
-        image: { src: "/img/projects/barbook.webp", width: 1280, height: 900 },
+        image: { src: "/img/projects/barbook.webp", width: 1266, height: 863 },
       },
       {
         title: "Zykk Store",
