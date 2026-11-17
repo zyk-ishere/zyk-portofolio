@@ -235,11 +235,11 @@ const en: Content = {
       },
       {
         title: "Barbook — Barbershop Booking",
-        desc: "Online barbershop booking PWA. Customers can browse barbershops and book appointments without logging in, while owners manage schedules, services, barbers, bookings, and income from one dashboard — installable on any device.",
+        desc: "Online barbershop booking PWA built by Devzy (devzy.site). Customers can book haircuts without login, while owners manage operations in one system — installable on devices and supporting multiple barbershops.",
         features: [
-          "No-login booking: pick barbershop, service, barber & time slot",
-          "Live barber status, today's queue, and Google Maps location",
-          "Owner dashboard for schedules, bookings, income & shareable link",
+          "Customer booking: no login, pick service, barber & time (24h) with availability and Google Maps",
+          "Owner dashboard: profile, schedule, services, barbers, bookings & income tracking",
+          "Installable PWA, shareable booking links, dashboard themes & multi-barbershop support",
         ],
         meta: { role: "Full Stack Developer", status: "Live" },
         tags: ["Next.js", "PWA", "Supabase"],
@@ -563,11 +563,11 @@ const id: Content = {
       },
       {
         title: "Barbook — Booking Barbershop",
-        desc: "PWA booking barbershop online. Pelanggan bisa memilih barbershop dan memesan jadwal cukur tanpa login, sementara pemilik mengelola jadwal, layanan, kapster, booking, dan pemasukan dalam satu dashboard — bisa di-install di perangkat.",
+        desc: "PWA booking barbershop online buatan Devzy (devzy.site). Pelanggan bisa memesan jadwal cukur tanpa login, sementara pemilik mengelola operasional dalam satu sistem — bisa di-install dan mendukung banyak barbershop.",
         features: [
-          "Booking tanpa login: pilih barbershop, layanan, kapster & jam",
-          "Status kapster, daftar booking hari ini, dan lokasi Google Maps",
-          "Dashboard pemilik: jadwal, booking, pemasukan & link booking",
+          "Booking pelanggan: tanpa login, pilih layanan, kapster & jam (24 jam), cek ketersediaan dan Google Maps",
+          "Dashboard pemilik: profil, jadwal, layanan, kapster, booking & pantau pemasukan",
+          "PWA bisa di-install, link booking (termasuk per kapster), tema dashboard & dukungan multi-barbershop",
         ],
         meta: { role: "Full Stack Developer", status: "Aktif" },
         tags: ["Next.js", "PWA", "Supabase"],
