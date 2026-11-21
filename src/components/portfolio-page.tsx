@@ -58,7 +58,7 @@ export function PortfolioPage({
   const marqueeItems = [...content.marquee, ...content.marquee];
 
   return (
-    <main lang={locale} className="min-h-screen">
+    <main id="main-content" lang={locale} className="min-h-screen">
       <RevealObserver />
 
       {/* NAV */}
@@ -374,6 +374,11 @@ export function PortfolioPage({
               <p className="text-muted leading-relaxed text-sm">
                 {content.security.outcome}
               </p>
+              {content.security.disclaimer && (
+                <p className="text-xs text-muted/80 mt-3 italic">
+                  {content.security.disclaimer}
+                </p>
+              )}
             </div>
           </article>
         </div>
@@ -522,7 +527,7 @@ export function PortfolioPage({
               {content.footer.ctaButton}
             </a>
           </div>
-          <div className="text-sm text-muted flex justify-between">
+          <div className="text-sm text-muted flex flex-col sm:flex-row sm:justify-between gap-2">
             <span>{content.footer.copyright}</span>
             <span className="mono">{content.footer.built}</span>
           </div>

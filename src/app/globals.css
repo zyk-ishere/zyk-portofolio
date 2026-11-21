@@ -233,3 +233,35 @@ h1, h2, h3 { letter-spacing: -0.02em; }
 .marquee { overflow: hidden; white-space: nowrap; }
 .marquee-track { display: inline-block; animation: marquee 28s linear infinite; }
 .marquee-track span { display: inline-block; padding: 0 2rem; }
+
+/* ---------- Accessibility ---------- */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 1rem;
+  z-index: 100;
+  padding: 0.5rem 0.75rem;
+  background: #fff;
+  color: #0a0a0a;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  transition: top 0.2s ease;
+}
+.skip-link:focus {
+  top: 1rem;
+}
+
+:focus-visible {
+  outline: 2px solid #ffffff;
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

@@ -82,6 +82,7 @@ export type Content = {
     imageAlts: string[];
     outcomeTitle: string;
     outcome: string;
+    disclaimer: string;
   };
   certificates: {
     eyebrow: string;
@@ -165,6 +166,7 @@ const en: Content = {
       { label: "Field", value: "Web Development & Cybersecurity" },
       { label: "Location", value: "Payakumbuh, West Sumatra" },
       { label: "Focus", value: "Web Application, Application Security & Networking" },
+      { label: "Availability", value: "Open to internship (PKL), freelance, and remote collaboration" },
     ],
     education: {
       label: "Education",
@@ -294,6 +296,8 @@ const en: Content = {
       "Kopi Ajoe authorized chat evidence 2",
     ],
     outcomeTitle: "Outcome & Follow-up",
+    disclaimer:
+      "All testing was performed with authorization on systems I was permitted to assess. Findings were reported responsibly for remediation.",
     outcome:
       "After the assessment, I was invited to meet the Kopi Ajoe cybersecurity team. They could not issue a certificate as appreciation, but instead offered me a position on their cybersecurity team. Due to school commitments and an upcoming internship (PKL), I could not accept at the time; the team agreed to welcome me as a member once I graduate. As a substitute for the certificate, they promised a cash appreciation — which, to date, has not yet been transferred.",
   },
@@ -493,6 +497,7 @@ const id: Content = {
       { label: "Bidang", value: "Web Development & Cybersecurity" },
       { label: "Lokasi", value: "Payakumbuh, Sumatera Barat" },
       { label: "Fokus", value: "Web Application, Application Security & Networking" },
+      { label: "Ketersediaan", value: "Terbuka untuk PKL/magang, freelance, dan kolaborasi remote" },
     ],
     education: {
       label: "Pendidikan",
@@ -622,6 +627,8 @@ const id: Content = {
       "Bukti chat dengan tim Kopi Ajoe 2",
     ],
     outcomeTitle: "Hasil & Tindak Lanjut",
+    disclaimer:
+      "Semua pengujian dilakukan dengan izin pada sistem yang berwenang. Temuan dilaporkan secara bertanggung jawab untuk perbaikan.",
     outcome:
       "Setelah penilaian, saya diundang untuk bertemu dengan tim cybersecurity Kopi Ajoe. Mereka tidak bisa memberikan apresiasi berupa sertifikat, tetapi menawarkan posisi di tim cybersecurity mereka. Karena masih sekolah dan akan melaksanakan PKL, saya belum bisa menerima saat itu; tim Kopi Ajoe bersedia menerima saya sebagai anggota setelah tamat. Sebagai pengganti sertifikat, mereka menjanjikan apresiasi berupa uang tunai — yang hingga saat ini belum ditransfer.",
   },
