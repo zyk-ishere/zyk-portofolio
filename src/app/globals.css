@@ -246,6 +246,15 @@ h1, h2, h3 { letter-spacing: -0.02em; }
   mix-blend-mode: screen;
 }
 
+/* ---------- Cyber rain ---------- */
+.cyber-rain {
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  pointer-events: none;
+  opacity: 0.55;
+}
+
 /* ---------- Accessibility ---------- */
 .skip-link {
   position: absolute;
