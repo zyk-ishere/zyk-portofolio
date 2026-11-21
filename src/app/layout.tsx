@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
-import { CursorWords } from "@/components/cursor-words";
+import { CursorLetters } from "@/components/cursor-letters";
 import { CyberRain } from "@/components/cyber-rain";
 import "./globals.css";
 
@@ -91,7 +91,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         Skip to content
       </a>
       <CyberRain />
-      <CursorWords />
+      <CursorLetters />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
