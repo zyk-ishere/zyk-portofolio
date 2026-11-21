@@ -166,6 +166,7 @@ export function PortfolioPage({
                 width={1024}
                 height={1536}
                 sizes="(min-width: 768px) 520px, 100vw"
+                priority
                 className="w-full h-auto object-contain float"
               />
             </div>

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -73,6 +74,8 @@ export const metadata: Metadata = {
     },
   },
   category: "technology",
+  themeColor: "#0a0a0a",
+  colorScheme: "dark",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
@@ -85,7 +88,31 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       <a href="#main-content" className="skip-link">
         Skip to content
       </a>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Person",
+            name: "Taufik Zaqi",
+            url: "https://www.zyk.web.id",
+            jobTitle: "Full Stack Web Developer",
+            address: {
+              "@type": "PostalAddress",
+              addressLocality: "Payakumbuh",
+              addressRegion: "West Sumatra",
+              addressCountry: "ID",
+            },
+            sameAs: [
+              "https://github.com/zyk-ishere",
+              "https://www.linkedin.com/in/taufik-zaqi",
+              "https://instagram.com/zyk.1sheremf",
+            ],
+          }),
+        }}
+      />
       {children}
+      <Analytics />
     </body>
     </html>
   );
