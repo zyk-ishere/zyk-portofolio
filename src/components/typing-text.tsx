@@ -16,8 +16,10 @@ export function TypingText({ texts, speed = 80, pause = 1400 }: { texts: string[
     } else if (deleting && shown.length > 0) {
       timer = setTimeout(() => setShown(shown.slice(0, -1)), speed / 2);
     } else {
-      setDeleting(false);
-      setI((v) => v + 1);
+      timer = setTimeout(() => {
+        setDeleting(false);
+        setI((v) => v + 1);
+      }, 0);
     }
     return () => clearTimeout(timer);
   }, [shown, deleting, i, texts, speed, pause]);
