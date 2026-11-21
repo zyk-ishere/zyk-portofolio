@@ -243,8 +243,8 @@ h1, h2, h3 { letter-spacing: -0.02em; }
   opacity: 0.55;
 }
 
-/* ---------- Cursor numbers ---------- */
-.cursor-numbers {
+/* ---------- Cursor words ---------- */
+.cursor-words {
   position: fixed;
   inset: 0;
   z-index: 20;
