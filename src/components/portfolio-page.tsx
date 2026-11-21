@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import type { ReactNode } from "react";
 
+import { HtmlLang } from "@/components/html-lang";
 import { MobileNav } from "@/components/mobile-nav";
 import { RevealObserver } from "@/components/reveal-observer";
 import { TypingText } from "@/components/typing-text";
@@ -59,6 +60,7 @@ export function PortfolioPage({
 
   return (
     <main id="main-content" lang={locale} className="min-h-screen">
+      <HtmlLang locale={locale} />
       <RevealObserver />
 
       {/* NAV */}
