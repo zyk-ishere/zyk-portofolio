@@ -9,6 +9,14 @@ export type ContactIcon =
   | "discord";
 
 type Fact = { label: string; value: string };
+type NoteItem = {
+  slug: string;
+  title: string;
+  date: string;
+  tags: string[];
+  summary: string;
+  body: string[];
+};
 
 type ProjectImage = { src: string; width: number; height: number };
 
@@ -100,6 +108,12 @@ export type Content = {
     whatsapp: string;
     whatsappUrl: string;
   };
+  notes: {
+    eyebrow: string;
+    title: string;
+    readMore: string;
+    items: NoteItem[];
+  };
   contact: { eyebrow: string; title: string; items: ContactItem[] };
   footer: {
     ctaTitle: string;
@@ -123,6 +137,7 @@ const en: Content = {
     { id: "cv", label: "CV" },
     { id: "services", label: "Services" },
     { id: "contact", label: "Contact" },
+    { id: "notes", label: "Notes" },
   ],
   navAria: { open: "Open menu", close: "Close menu" },
   hero: {
@@ -387,6 +402,65 @@ const en: Content = {
     whatsapp: "Contact via WhatsApp",
     whatsappUrl: servicesWhatsApp,
   },
+  notes: {
+    eyebrow: "09 - Notes",
+    title: "Notes",
+    readMore: "Read more",
+    items: [
+      {
+        slug: "supabase-rls-misconfiguration",
+        title: "Supabase RLS: the misconfiguration I found (and how to avoid it)",
+        date: "2026",
+        tags: ["Supabase", "Security", "RLS"],
+        summary:
+          "A short write-up about a Row Level Security misconfiguration, what it exposed, and the checks I now run before shipping.",
+        body: [
+          "Row Level Security is one of Supabase's best features, but it is also easy to get wrong. In a recent authorized assessment, I found that a policy was effectively bypassed because the table had RLS enabled while a broad policy still allowed reads that should have been restricted.",
+          "The issue was not a missing policy, but an overly permissive one combined with a client query that selected more columns than intended. The result was unauthorized data exposure through a normal API request.",
+          "My takeaway: enable RLS on every table, write policies per role, and test them with the anon key, not only as an admin. I also now review generated SQL policies line by line before deploying.",
+        ],
+      },
+      {
+        slug: "multi-tenant-barbershop-pwa",
+        title: "Designing a multi-tenant booking PWA for barbershops",
+        date: "2026",
+        tags: ["Next.js", "PWA", "Supabase", "Architecture"],
+        summary:
+          "Notes on building Barbook: tenant isolation, booking rules, and keeping the owner dashboard simple.",
+        body: [
+          "Barbook supports multiple barbershops, each with its own services, barbers, bookings, and income. The main design rule was simple: every query must be scoped by shop_id, and no owner can ever see another shop's data.",
+          "Booking rules were trickier than expected. Bookings follow shop hours, and if a customer tries to book after closing time, the request is scheduled for the next operating day instead of being rejected.",
+          "For the PWA side, I kept the app shell small and made the booking flow work without login. That single decision removed most of the friction for customers and improved conversion.",
+        ],
+      },
+      {
+        slug: "small-business-web-security-checklist",
+        title: "A practical security checklist for small business websites",
+        date: "2026",
+        tags: ["Web Security", "Checklist", "UMKM"],
+        summary:
+          "A short checklist I use when reviewing small business sites: auth, data exposure, uploads, and headers.",
+        body: [
+          "Most small business sites do not need enterprise security, but they do need the basics. I start with authentication: are admin routes protected, are passwords hashed, and is there any way to bypass login?",
+          "Next I check data exposure: API responses, Supabase tables, and public storage buckets. Many leaks happen because a table or bucket was left public by default.",
+          "Finally I check headers, file uploads, and dependency versions. These are small steps, but they catch the majority of issues I see in the wild.",
+        ],
+      },
+      {
+        slug: "vibe-coding-with-ai",
+        title: "Vibe coding with AI: speed, quality, and the missing context",
+        date: "2026",
+        tags: ["AI", "Workflow", "Productivity"],
+        summary:
+          "How I use AI to ship faster without losing ownership of the codebase.",
+        body: [
+          "I use AI as an accelerator, not as an autopilot. It is great for scaffolding, refactoring, and exploring unfamiliar APIs, but it does not know the constraints of my project unless I explain them.",
+          "The biggest risk is accepting code that works but does not fit the architecture. I mitigate this by reviewing every change, running builds, and keeping commits small.",
+          "AI is most useful when I already understand the problem. When I do not, I read and debug manually first, then ask AI to help with the repetitive parts.",
+        ],
+      },
+    ],
+  },
   contact: {
     eyebrow: "08 — Contact",
     title: "Contact Me",
@@ -454,6 +528,7 @@ const id: Content = {
     { id: "cv", label: "CV" },
     { id: "services", label: "Layanan" },
     { id: "contact", label: "Kontak" },
+    { id: "notes", label: "Catatan" },
   ],
   navAria: { open: "Buka menu", close: "Tutup menu" },
   hero: {
@@ -717,6 +792,65 @@ const id: Content = {
     visit: "Kunjungi devzy.site",
     whatsapp: "Hubungi via WhatsApp",
     whatsappUrl: servicesWhatsApp,
+  },
+  notes: {
+    eyebrow: "09 - Catatan",
+    title: "Catatan",
+    readMore: "Baca selengkapnya",
+    items: [
+      {
+        slug: "supabase-rls-misconfiguration",
+        title: "RLS Supabase: kesalahan konfigurasi yang saya temukan (dan cara menghindarinya)",
+        date: "2026",
+        tags: ["Supabase", "Keamanan", "RLS"],
+        summary:
+          "Catatan singkat tentang kesalahan konfigurasi Row Level Security, apa yang terekspos, dan pemeriksaan yang saya jalankan sebelum rilis.",
+        body: [
+          "Row Level Security adalah salah satu fitur terbaik Supabase, tetapi juga mudah salah konfigurasi. Dalam penilaian terotorisasi baru-baru ini, saya menemukan bahwa sebuah policy secara efektif terlewati karena tabel sudah mengaktifkan RLS, tetapi policy yang terlalu longgar masih mengizinkan pembacaan data yang seharusnya dibatasi.",
+          "Masalahnya bukan policy yang hilang, melainkan policy yang terlalu permisif ditambah query klien yang memilih lebih banyak kolom dari yang seharusnya. Hasilnya, data terekspos melalui request API normal.",
+          "Pelajaran saya: aktifkan RLS di setiap tabel, tulis policy per peran, dan uji dengan anon key, bukan hanya sebagai admin. Saya juga meninjau policy SQL yang dihasilkan baris per baris sebelum deploy.",
+        ],
+      },
+      {
+        slug: "multi-tenant-barbershop-pwa",
+        title: "Merancang PWA booking multi-tenant untuk barbershop",
+        date: "2026",
+        tags: ["Next.js", "PWA", "Supabase", "Arsitektur"],
+        summary:
+          "Catatan membangun Barbook: isolasi tenant, aturan booking, dan menjaga dashboard pemilik tetap sederhana.",
+        body: [
+          "Barbook mendukung banyak barbershop, masing-masing dengan layanan, kapster, booking, dan pemasukan sendiri. Aturan desain utamanya sederhana: setiap query harus dibatasi oleh shop_id, dan tidak ada pemilik yang bisa melihat data toko lain.",
+          "Aturan booking ternyata lebih rumit dari perkiraan. Booking mengikuti jam operasional, dan jika pelanggan mencoba memesan setelah jam tutup, permintaan dijadwalkan ke hari operasional berikutnya alih-alih ditolak.",
+          "Untuk sisi PWA, saya menjaga app shell tetap kecil dan membuat alur booking tanpa login. Keputusan tunggal itu menghilangkan sebagian besar hambatan bagi pelanggan dan meningkatkan konversi.",
+        ],
+      },
+      {
+        slug: "small-business-web-security-checklist",
+        title: "Checklist keamanan praktis untuk website UMKM",
+        date: "2026",
+        tags: ["Keamanan Web", "Checklist", "UMKM"],
+        summary:
+          "Checklist yang saya gunakan saat meninjau website UMKM: autentikasi, eksposur data, unggahan, dan header.",
+        body: [
+          "Sebagian besar website UMKM tidak membutuhkan keamanan tingkat enterprise, tetapi tetap membutuhkan dasar-dasarnya. Saya mulai dari autentikasi: apakah route admin terlindungi, apakah password di-hash, dan apakah ada cara melewati login?",
+          "Berikutnya saya periksa eksposur data: respons API, tabel Supabase, dan bucket penyimpanan publik. Banyak kebocoran terjadi karena tabel atau bucket dibiarkan publik secara default.",
+          "Terakhir saya periksa header, unggahan file, dan versi dependensi. Langkah-langkah kecil ini, tetapi menangkap sebagian besar masalah yang saya temui di lapangan.",
+        ],
+      },
+      {
+        slug: "vibe-coding-with-ai",
+        title: "Vibe coding dengan AI: kecepatan, kualitas, dan konteks yang hilang",
+        date: "2026",
+        tags: ["AI", "Workflow", "Produktivitas"],
+        summary:
+          "Bagaimana saya menggunakan AI untuk merilis lebih cepat tanpa kehilangan kepemilikan atas codebase.",
+        body: [
+          "Saya menggunakan AI sebagai akselerator, bukan autopilot. AI sangat baik untuk scaffolding, refactoring, dan menjelajahi API yang belum familiar, tetapi tidak tahu batasan proyek saya kecuali saya menjelaskannya.",
+          "Risiko terbesar adalah menerima kode yang berfungsi tetapi tidak sesuai arsitektur. Saya menguranginya dengan meninjau setiap perubahan, menjalankan build, dan menjaga commit tetap kecil.",
+          "AI paling berguna ketika saya sudah memahami masalahnya. Ketika belum, saya membaca dan melakukan debugging secara manual dulu, lalu meminta AI membantu bagian-bagian repetitif.",
+        ],
+      },
+    ],
   },
   contact: {
     eyebrow: "08 — Kontak",

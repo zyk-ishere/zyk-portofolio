@@ -512,6 +512,49 @@ export function PortfolioPage({
         </div>
       </section>
 
+      {/* NOTES */}
+      <section id="notes" className="section border-t border-line reveal">
+        <div className="container">
+          <p className="mono text-sm text-muted mb-2">
+            {content.notes.eyebrow}
+          </p>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">
+            {content.notes.title}
+          </h2>
+          <div className="grid gap-6">
+            {content.notes.items.map((note) => (
+              <article key={note.slug} className="card p-6">
+                <div className="flex flex-wrap items-center gap-3 mb-2">
+                  <h3 className="text-xl font-semibold">{note.title}</h3>
+                  <span className="mono text-xs text-muted">{note.date}</span>
+                </div>
+                <div className="flex flex-wrap gap-2 mb-3">
+                  {note.tags.map((tag) => (
+                    <span
+                      key={tag}
+                      className="mono text-xs px-2 py-1 rounded chip"
+                    >
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+                <p className="text-muted text-sm">{note.summary}</p>
+                <details className="mt-4">
+                  <summary className="cursor-pointer text-sm hover:underline">
+                    {content.notes.readMore}
+                  </summary>
+                  <div className="mt-3 space-y-3 text-muted text-sm leading-relaxed">
+                    {note.body.map((paragraph) => (
+                      <p key={paragraph}>{paragraph}</p>
+                    ))}
+                  </div>
+                </details>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
       <footer className="border-t border-line py-8 px-6">
         <div className="container">
           <div className="flex flex-col items-start justify-between gap-4 pb-8 mb-8 border-b border-line sm:flex-row sm:items-center">
