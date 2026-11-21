@@ -247,7 +247,7 @@ h1, h2, h3 { letter-spacing: -0.02em; }
 .cursor-words {
   position: fixed;
   inset: 0;
-  z-index: 20;
+  z-index: -1;
   pointer-events: none;
 }
 
