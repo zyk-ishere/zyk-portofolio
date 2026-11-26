@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import { CursorLetters } from "@/components/cursor-letters";
 import { CyberRain } from "@/components/cyber-rain";
+import { SplashIntro } from "@/components/splash-intro";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -87,6 +88,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
+      <SplashIntro />
       <a href="#main-content" className="skip-link">
         Skip to content
       </a>
